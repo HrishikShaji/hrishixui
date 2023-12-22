@@ -1,31 +1,28 @@
-import {
-  ChangeEvent,
-  Dispatch,
-  SetStateAction,
-  useEffect,
-  useState,
-} from "react";
+import { ChangeEvent, Dispatch, SetStateAction } from "react";
 
 export type CheckBoxOption = {
   id: string;
   title: string;
-  checked: boolean;
 };
 
 interface InputCheckBoxProps {
   options: CheckBoxOption[];
-  onChange: (value: (prev: CheckBoxOption[]) => CheckBoxOption[]) => void;
   label: string;
-  selectedItem: string[];
-  setSelectedItem: Dispatch<SetStateAction<string[]>>;
+  selectedItem: CheckBoxOption[];
+  setSelectedItem: Dispatch<SetStateAction<CheckBoxOption[]>>;
 }
 
 export const InputCheckBox: React.FC<InputCheckBoxProps> = (props) => {
-  const handleChange = (e: ChangeEvent<HTMLInputElement>, id: string) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement>,
+    item: CheckBoxOption,
+  ) => {
     if (e.target.checked) {
-      props.setSelectedItem([...props.selectedItem, id]);
+      props.setSelectedItem([...props.selectedItem, item]);
     } else {
-      props.setSelectedItem((prev) => prev.filter((item) => item !== id));
+      props.setSelectedItem((prev) =>
+        prev.filter((option) => option.id !== item.id),
+      );
     }
   };
   return (
@@ -37,9 +34,9 @@ export const InputCheckBox: React.FC<InputCheckBoxProps> = (props) => {
             <input
               key={option.id}
               type="checkbox"
-              checked={props.selectedItem.includes(option.id)}
+              checked={props.selectedItem.some((item) => item.id === option.id)}
               value={option.title}
-              onChange={(e) => handleChange(e, option.id)}
+              onChange={(e) => handleChange(e, option)}
             />
             <h1>{option.title}</h1>
           </div>

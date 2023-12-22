@@ -8,17 +8,16 @@ import { InputSelect, Option } from "./InputSelect";
 import { CheckBoxOption, InputCheckBox } from "./InputCheckBox";
 
 const checkBoxOptions: CheckBoxOption[] = [
-  { title: "Single", id: "1", checked: false },
-  { title: "Married", id: "2", checked: false },
-  { title: "Not disclosing", id: "3", checked: false },
+  { title: "Single", id: "1" },
+  { title: "Married", id: "2" },
+  { title: "Not disclosing", id: "3" },
 ];
 export const Form = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
   const [description, setDescription] = useState("");
   const [gender, setGender] = useState<Option>({ id: "", title: "" });
-  const [status, setStatus] = useState<CheckBoxOption[]>(checkBoxOptions);
-  const [selectedItem, setSelectedItem] = useState<string[]>([]);
+  const [status, setStatus] = useState<CheckBoxOption[]>([]);
   const options: Option[] = [
     { title: "Male", id: "1" },
     { title: "Female", id: "2" },
@@ -48,11 +47,10 @@ export const Form = () => {
       setNumber(0);
       setDescription("");
       setGender({ id: "", title: "" });
-      setStatus(checkBoxOptions);
-      setSelectedItem([]);
+      setStatus([]);
     }
   };
-  console.log(selectedItem);
+  console.log(status);
 
   return (
     <form
@@ -83,11 +81,10 @@ export const Form = () => {
         options={options}
       />
       <InputCheckBox
-        options={status}
-        onChange={(item) => setStatus(item)}
+        options={checkBoxOptions}
         label="Status"
-        selectedItem={selectedItem}
-        setSelectedItem={setSelectedItem}
+        selectedItem={status}
+        setSelectedItem={setStatus}
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
