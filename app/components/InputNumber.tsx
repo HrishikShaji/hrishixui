@@ -1,11 +1,9 @@
 "use client";
 
-import { Dispatch, SetStateAction } from "react";
-
 interface InputNumberProps {
   label: string;
   value: number;
-  onChange: Dispatch<SetStateAction<number>>;
+  onChange: (value: number) => void;
   placeholder: string;
 }
 
@@ -17,7 +15,7 @@ export const InputNumber: React.FC<InputNumberProps> = (props) => {
         type="number"
         className="p-1 rounded-md text-black"
         value={props.value}
-        onChange={(e) => props.onChange(e.target.value)}
+        onChange={(e) => props.onChange(parseInt(e.target.value))}
         placeholder={props.placeholder}
       />
     </div>

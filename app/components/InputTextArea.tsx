@@ -1,11 +1,9 @@
 "use client";
 
-import { Dispatch, SetStateAction } from "react";
-
 interface InputTextAreaProps {
   label: string;
   value: string;
-  onChange: Dispatch<SetStateAction<string>>;
+  onChange: (value: string) => void;
   placeholder: string;
 }
 
