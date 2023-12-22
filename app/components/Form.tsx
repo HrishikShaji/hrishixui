@@ -3,13 +3,15 @@
 import { FormEvent, useState } from "react";
 import { InputText } from "./InputText";
 import { InputNumber } from "./InputNumber";
+import { InputTextArea } from "./InputTextArea";
 
 export const Form = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
+  const [description, setDescription] = useState("");
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    const data = { name: name, number: number };
+    const data = { name: name, number: number, description: description };
 
     try {
       await fetch("api/test", {
@@ -22,6 +24,7 @@ export const Form = () => {
     } finally {
       setName("");
       setNumber(0);
+      setDescription("");
     }
   };
 
@@ -41,6 +44,12 @@ export const Form = () => {
         value={number}
         placeholder="Number..."
         label="Number"
+      />
+      <InputTextArea
+        onChange={setDescription}
+        value={description}
+        placeholder="Description..."
+        label="Description"
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
