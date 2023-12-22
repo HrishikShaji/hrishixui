@@ -5,13 +5,20 @@ import { InputText } from "./InputText";
 import { InputNumber } from "./InputNumber";
 import { InputTextArea } from "./InputTextArea";
 import { InputSelect, Option } from "./InputSelect";
+import { CheckBoxOption, InputCheckBox } from "./InputCheckBox";
 
+const checkBoxOptions: CheckBoxOption[] = [
+  { title: "Single", id: "1", checked: false },
+  { title: "Married", id: "2", checked: false },
+  { title: "Not disclosing", id: "3", checked: false },
+];
 export const Form = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
   const [description, setDescription] = useState("");
-  const [item, setItem] = useState<Option>({ id: "", title: "" });
-
+  const [gender, setGender] = useState<Option>({ id: "", title: "" });
+  const [status, setStatus] = useState<CheckBoxOption[]>(checkBoxOptions);
+  const [selectedItem, setSelectedItem] = useState<string[]>([]);
   const options: Option[] = [
     { title: "Male", id: "1" },
     { title: "Female", id: "2" },
@@ -24,7 +31,8 @@ export const Form = () => {
       name: name,
       number: number,
       description: description,
-      item: item,
+      gender: gender,
+      status: status,
     };
 
     try {
@@ -39,9 +47,12 @@ export const Form = () => {
       setName("");
       setNumber(0);
       setDescription("");
-      setItem({ id: "", title: "" });
+      setGender({ id: "", title: "" });
+      setStatus(checkBoxOptions);
+      setSelectedItem([]);
     }
   };
+  console.log(selectedItem);
 
   return (
     <form
@@ -67,9 +78,16 @@ export const Form = () => {
         label="Description"
       />
       <InputSelect
-        onChange={(item: Option) => setItem(item)}
-        item={item}
+        onChange={(item: Option) => setGender(item)}
+        item={gender}
         options={options}
+      />
+      <InputCheckBox
+        options={status}
+        onChange={(item) => setStatus(item)}
+        label="Status"
+        selectedItem={selectedItem}
+        setSelectedItem={setSelectedItem}
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
