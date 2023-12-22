@@ -8,6 +8,8 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   try {
+    const body = await request.json();
+    console.log(body);
     return new Response(JSON.stringify("succes"), { status: 200 });
   } catch (error: any) {
     return new Response(JSON.stringify(error.message), { status: 500 });

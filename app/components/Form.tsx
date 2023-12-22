@@ -2,12 +2,27 @@
 
 import { FormEvent, useState } from "react";
 import { InputText } from "./InputText";
+import { InputNumber } from "./InputNumber";
 
 export const Form = () => {
   const [name, setName] = useState("");
-  const handleSubmit = (e: FormEvent) => {
+  const [number, setNumber] = useState(0);
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log(name);
+    const data = { name: name, number: number };
+
+    try {
+      await fetch("api/test", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.error("Error", error);
+    } finally {
+      setName("");
+      setNumber(0);
+    }
   };
 
   return (
@@ -21,7 +36,13 @@ export const Form = () => {
         placeholder="Name..."
         label="Name"
       />
-      <button type="submit" className="p-2 rounded-md bg-white text-black">
+      <InputNumber
+        onChange={setNumber}
+        value={number}
+        placeholder="Number..."
+        label="Number"
+      />
+      <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
       </button>
     </form>
