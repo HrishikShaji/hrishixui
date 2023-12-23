@@ -8,6 +8,7 @@ import { InputSelect, Option } from "./InputSelect";
 import { CheckBoxOption, InputCheckBox } from "./InputCheckBox";
 import { InputMultipleRange, MultipleRangeItem } from "./InputMultipleRange";
 import { InputImage } from "./InputImage";
+import { InputDate } from "./InputDate";
 
 const checkBoxOptions: CheckBoxOption[] = [
   { title: "Single", id: "1" },
@@ -116,6 +117,7 @@ export const Form = () => {
         showImages={false}
         values={wimages}
       />
+      <InputDate />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
       </button>
