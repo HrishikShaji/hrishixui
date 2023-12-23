@@ -6,6 +6,7 @@ import { InputNumber } from "./InputNumber";
 import { InputTextArea } from "./InputTextArea";
 import { InputSelect, Option } from "./InputSelect";
 import { CheckBoxOption, InputCheckBox } from "./InputCheckBox";
+import { InputMultipleRange, MultipleRangeItem } from "./InputMultipleRange";
 
 const checkBoxOptions: CheckBoxOption[] = [
   { title: "Single", id: "1" },
@@ -18,6 +19,8 @@ export const Form = () => {
   const [description, setDescription] = useState("");
   const [gender, setGender] = useState<Option>({ id: "", title: "" });
   const [status, setStatus] = useState<CheckBoxOption[]>([]);
+  const [price, setPrice] = useState<MultipleRangeItem>({ min: 0, max: 10000 });
+
   const options: Option[] = [
     { title: "Male", id: "1" },
     { title: "Female", id: "2" },
@@ -50,7 +53,7 @@ export const Form = () => {
       setStatus([]);
     }
   };
-  console.log(status);
+  console.log(price);
 
   return (
     <form
@@ -86,6 +89,12 @@ export const Form = () => {
         selectedItem={status}
         setSelectedItem={setStatus}
         multiple={true}
+      />
+
+      <InputMultipleRange
+        minValues={price.min}
+        maxValues={price.max}
+        onChange={(value: MultipleRangeItem) => setPrice(value)}
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
