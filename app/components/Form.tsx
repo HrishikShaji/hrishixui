@@ -21,9 +21,8 @@ export const Form = () => {
   const [gender, setGender] = useState<Option>({ id: "", title: "" });
   const [status, setStatus] = useState<CheckBoxOption[]>([]);
   const [price, setPrice] = useState<MultipleRangeItem>({ min: 0, max: 10000 });
-  const [images, setImages] = useState<FileList | null>(null);
-
-  console.log(images);
+  const [images, setImages] = useState<File[]>([]);
+  const [wimages, setWImages] = useState<File[]>([]);
 
   const options: Option[] = [
     { title: "Male", id: "1" },
@@ -40,6 +39,8 @@ export const Form = () => {
       gender: gender,
       status: status,
       price: price,
+      images: images,
+      wimages: wimages,
     };
 
     try {
@@ -57,14 +58,14 @@ export const Form = () => {
       setGender({ id: "", title: "" });
       setStatus([]);
       setPrice({ min: 0, max: 10000 });
-      setImages(null);
+      setImages([]);
     }
   };
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-neutral-500 rounded-md p-5 flex flex-col gap-5"
+      className="bg-neutral-500 rounded-md p-5 grid grid-cols-5 gap-5"
     >
       <InputText
         onChange={(value: string) => setName(value)}
@@ -103,8 +104,17 @@ export const Form = () => {
       />
       <InputImage
         multiple={true}
-        onChange={(images: FileList) => setImages(images)}
+        onChange={(images: File[]) => setImages(images)}
         id="1"
+        showImages={true}
+        values={images}
+      />
+      <InputImage
+        multiple={true}
+        onChange={(images: File[]) => setWImages(images)}
+        id="2"
+        showImages={false}
+        values={wimages}
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
