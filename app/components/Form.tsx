@@ -7,6 +7,7 @@ import { InputTextArea } from "./InputTextArea";
 import { InputSelect, Option } from "./InputSelect";
 import { CheckBoxOption, InputCheckBox } from "./InputCheckBox";
 import { InputMultipleRange, MultipleRangeItem } from "./InputMultipleRange";
+import { InputImage } from "./InputImage";
 
 const checkBoxOptions: CheckBoxOption[] = [
   { title: "Single", id: "1" },
@@ -20,6 +21,9 @@ export const Form = () => {
   const [gender, setGender] = useState<Option>({ id: "", title: "" });
   const [status, setStatus] = useState<CheckBoxOption[]>([]);
   const [price, setPrice] = useState<MultipleRangeItem>({ min: 0, max: 10000 });
+  const [images, setImages] = useState<FileList | null>(null);
+
+  console.log(images);
 
   const options: Option[] = [
     { title: "Male", id: "1" },
@@ -53,6 +57,7 @@ export const Form = () => {
       setGender({ id: "", title: "" });
       setStatus([]);
       setPrice({ min: 0, max: 10000 });
+      setImages(null);
     }
   };
 
@@ -95,6 +100,11 @@ export const Form = () => {
         minValues={price.min}
         maxValues={price.max}
         onChange={(value: MultipleRangeItem) => setPrice(value)}
+      />
+      <InputImage
+        multiple={true}
+        onChange={(images: FileList) => setImages(images)}
+        id="1"
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
