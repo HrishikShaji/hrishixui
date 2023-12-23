@@ -85,6 +85,7 @@ export const Form = () => {
         label="Status"
         selectedItem={status}
         setSelectedItem={setStatus}
+        multiple={true}
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
