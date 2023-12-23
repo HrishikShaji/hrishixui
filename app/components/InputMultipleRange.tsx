@@ -21,14 +21,26 @@ export const InputMultipleRange: React.FC<InputMultipleRangeProps> = ({
   const minInputRef = useRef<HTMLInputElement | null>(null);
   const maxInputRef = useRef<HTMLInputElement | null>(null);
   const progressRef = useRef<HTMLDivElement | null>(null);
+  const [left, setLeft] = useState("0%");
+  const [right, setRight] = useState("0%");
 
-  const left = minInputRef.current
-    ? (minValues / parseInt(minInputRef.current.max)) * 100 + "%"
-    : "0%";
+  useEffect(() => {
+    if (minValues === 0 && maxValues === 10000) {
+      setMinValue(0);
+      setMaxValue(10000);
+    }
+    const left = minInputRef.current
+      ? (minValues / parseInt(minInputRef.current.max)) * 100 + "%"
+      : "0%";
 
-  const right = maxInputRef.current
-    ? 100 - (maxValues / parseInt(maxInputRef.current.max)) * 100 + "%"
-    : "0%";
+    const right = maxInputRef.current
+      ? 100 - (maxValues / parseInt(maxInputRef.current.max)) * 100 + "%"
+      : "0%";
+
+    setLeft(left);
+    setRight(right);
+  }, [minValues, maxValues]);
+
   useEffect(() => {
     onChange({ min: minValue, max: maxValue });
   }, [minValue, maxValue]);
@@ -59,7 +71,7 @@ export const InputMultipleRange: React.FC<InputMultipleRangeProps> = ({
         });
       });
     }
-  }, [maxValue, minValue]);
+  }, [maxValue, minValue, minValues, maxValues]);
   return (
     <div>
       <div

@@ -35,6 +35,7 @@ export const Form = () => {
       description: description,
       gender: gender,
       status: status,
+      price: price,
     };
 
     try {
@@ -51,9 +52,9 @@ export const Form = () => {
       setDescription("");
       setGender({ id: "", title: "" });
       setStatus([]);
+      setPrice({ min: 0, max: 10000 });
     }
   };
-  console.log(price);
 
   return (
     <form
@@ -90,7 +91,6 @@ export const Form = () => {
         setSelectedItem={setStatus}
         multiple={true}
       />
-
       <InputMultipleRange
         minValues={price.min}
         maxValues={price.max}
