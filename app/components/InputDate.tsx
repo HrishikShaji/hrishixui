@@ -7,12 +7,19 @@ import {
   getDay,
   startOfMonth,
 } from "date-fns";
+import {
+  IoIosArrowDroprightCircle,
+  IoIosArrowDropleftCircle,
+  IoIosArrowDropleft,
+  IoIosArrowDropright,
+} from "react-icons/io";
 
 export const InputDate = () => {
   const currentDate = new Date();
   const [month, setMonth] = useState(currentDate.getMonth());
   const [year, setYear] = useState(currentDate.getFullYear());
   const [day, setDay] = useState(currentDate.getDate());
+  const [isOpen, setIsOpen] = useState(false);
   const months = [
     "January",
     "February",
@@ -39,66 +46,79 @@ export const InputDate = () => {
   const startingDayOfMonth = getDay(firstDayOfMonth);
   const totalDays = startingDayOfMonth + daysInMonth.length;
   const endingDayOfMonth = totalDays % 7 === 0 ? 0 : 7 - (totalDays % 7);
-  console.log(day);
+  console.log(`${day}/${month + 1}/${year}`);
 
   return (
-    <div>
-      <input type="date" className="p-1 rounded-md text-black" />
-      <div className="flex gap-2 justify-between">
-        <button onClick={() => setYear((prev) => prev - 1)}>prev</button>
-        <h1>{year}</h1>
-        <button onClick={() => setYear((prev) => prev + 1)}>next</button>
+    <div className="">
+      <div className="flex justify-between items-center">
+        <h1>{`${day}/${month + 1}/${year}`}</h1>
+        <button type="button" onClick={() => setIsOpen(!isOpen)}>
+          $
+        </button>{" "}
       </div>
-      <div className="flex gap-2 justify-between">
-        <button
-          disabled={month === 0}
-          onClick={() => setMonth((prev) => prev - 1)}
-        >
-          prev
-        </button>
-        <h1>{months[month]}</h1>
-        <button
-          disabled={month === months.length - 1}
-          onClick={() => setMonth((prev) => prev + 1)}
-        >
-          next
-        </button>
-      </div>
-      <div className="grid grid-cols-7 ">
-        {weekDays.map((weekDay) => (
-          <div
-            key={weekDay}
-            className="w-10 border-[1px] border-black text-center"
-          >
-            {weekDay}
+      {isOpen ? (
+        <div className="absolute mt-5 p-1 flex flex-col gap-1 rounded-md bg-white text-sm ">
+          <div className="flex gap-2 justify-between">
+            <button onClick={() => setYear((prev) => prev - 1)}>
+              <IoIosArrowDropleft />
+            </button>
+            <h1>{year}</h1>
+            <button onClick={() => setYear((prev) => prev + 1)}>
+              <IoIosArrowDropright />
+            </button>
           </div>
-        ))}
-        {Array.from({ length: startingDayOfMonth }).map((_, i) => (
-          <div
-            key={`fake-${i}`}
-            className={`${
-              day === i ? "bg-blue-500" : ""
-            } w-10 border-[1px] border-black text-center`}
-          />
-        ))}
-        {daysInMonth.map((item, i) => (
-          <div
-            key={i}
-            className={`${
-              day === i + 1 ? "bg-blue-500" : ""
-            } w-10 border-[1px] border-black text-center`}
-            onClick={() => setDay(i + 1)}
-          >
-            {format(item, "d")}
+          <div className="flex gap-2 justify-between">
+            <button
+              disabled={month === 0}
+              onClick={() => setMonth((prev) => prev - 1)}
+            >
+              <IoIosArrowDropleft />
+            </button>
+            <h1>{months[month]}</h1>
+            <button
+              disabled={month === months.length - 1}
+              onClick={() => setMonth((prev) => prev + 1)}
+            >
+              <IoIosArrowDropright />
+            </button>
           </div>
-        ))}
-        {Array.from({ length: endingDayOfMonth }).map((_, i) => (
-          <div
-            key={`fakee-${i}`}
-            className="w-10 border-[1px] border-black text-center"
-          />
-        ))}
-      </div>
+          <div className="grid grid-cols-7 w-full gap-1">
+            {weekDays.map((weekDay) => (
+              <div
+                key={weekDay}
+                className="w-10 border-[1px] border-black text-center rounded-md"
+              >
+                {weekDay}
+              </div>
+            ))}
+            {Array.from({ length: startingDayOfMonth }).map((_, i) => (
+              <div
+                key={`fake-${i}`}
+                className={`${
+                  day === i ? "bg-blue-500" : ""
+                } w-10 border-[1px] border-black text-center rounded-md`}
+              />
+            ))}
+            {daysInMonth.map((item, i) => (
+              <div
+                key={i}
+                className={`${
+                  day === i + 1 ? "bg-blue-500 hover:bg-blue-500 " : ""
+                } w-10 border-[1px] border-black text-center rounded-md hover:bg-neutral-300 cursor-pointer`}
+                onClick={() => setDay(i + 1)}
+              >
+                {format(item, "d")}
+              </div>
+            ))}
+            {Array.from({ length: endingDayOfMonth }).map((_, i) => (
+              <div
+                key={`fakee-${i}`}
+                className="w-10 border-[1px] border-black text-center rounded-md"
+              />
+            ))}
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };
