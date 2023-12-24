@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   eachDayOfInterval,
   endOfMonth,
@@ -7,19 +7,19 @@ import {
   getDay,
   startOfMonth,
 } from "date-fns";
-import {
-  IoIosArrowDroprightCircle,
-  IoIosArrowDropleftCircle,
-  IoIosArrowDropleft,
-  IoIosArrowDropright,
-} from "react-icons/io";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
-export const InputDate = () => {
-  const currentDate = new Date();
-  const [month, setMonth] = useState(currentDate.getMonth());
-  const [year, setYear] = useState(currentDate.getFullYear());
-  const [day, setDay] = useState(currentDate.getDate());
+interface InputDateProps {
+  onChange: (date: Date) => void;
+  date: Date;
+}
+
+export const InputDate: React.FC<InputDateProps> = (props) => {
+  const [month, setMonth] = useState(props.date.getMonth());
+  const [year, setYear] = useState(props.date.getFullYear());
+  const [day, setDay] = useState(props.date.getDate());
   const [isOpen, setIsOpen] = useState(false);
+  const [date, setDate] = useState(props.date);
   const months = [
     "January",
     "February",
@@ -35,10 +35,14 @@ export const InputDate = () => {
     "December",
   ];
   const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const newDate = new Date(year, month, day);
-  const firstDayOfMonth = startOfMonth(newDate);
-  const lastDayOfMonth = endOfMonth(newDate);
 
+  useEffect(() => {
+    const selectedDate = new Date(year, month, day);
+    setDate(selectedDate);
+    props.onChange(selectedDate);
+  }, [day, month, year]);
+  const firstDayOfMonth = startOfMonth(date);
+  const lastDayOfMonth = endOfMonth(date);
   const daysInMonth = eachDayOfInterval({
     start: firstDayOfMonth,
     end: lastDayOfMonth,
@@ -46,8 +50,6 @@ export const InputDate = () => {
   const startingDayOfMonth = getDay(firstDayOfMonth);
   const totalDays = startingDayOfMonth + daysInMonth.length;
   const endingDayOfMonth = totalDays % 7 === 0 ? 0 : 7 - (totalDays % 7);
-  console.log(`${day}/${month + 1}/${year}`);
-
   return (
     <div className="">
       <div className="flex justify-between items-center">
@@ -59,16 +61,17 @@ export const InputDate = () => {
       {isOpen ? (
         <div className="absolute mt-5 p-1 flex flex-col gap-1 rounded-md bg-white text-sm ">
           <div className="flex gap-2 justify-between">
-            <button onClick={() => setYear((prev) => prev - 1)}>
+            <button type="button" onClick={() => setYear((prev) => prev - 1)}>
               <IoIosArrowDropleft />
             </button>
             <h1>{year}</h1>
-            <button onClick={() => setYear((prev) => prev + 1)}>
+            <button type="button" onClick={() => setYear((prev) => prev + 1)}>
               <IoIosArrowDropright />
             </button>
           </div>
           <div className="flex gap-2 justify-between">
             <button
+              type="button"
               disabled={month === 0}
               onClick={() => setMonth((prev) => prev - 1)}
             >
@@ -76,6 +79,7 @@ export const InputDate = () => {
             </button>
             <h1>{months[month]}</h1>
             <button
+              type="button"
               disabled={month === months.length - 1}
               onClick={() => setMonth((prev) => prev + 1)}
             >
@@ -105,7 +109,10 @@ export const InputDate = () => {
                 className={`${
                   day === i + 1 ? "bg-blue-500 hover:bg-blue-500 " : ""
                 } w-10 border-[1px] border-black text-center rounded-md hover:bg-neutral-300 cursor-pointer`}
-                onClick={() => setDay(i + 1)}
+                onClick={() => {
+                  setDay(i + 1);
+                  console.log(i + 1);
+                }}
               >
                 {format(item, "d")}
               </div>

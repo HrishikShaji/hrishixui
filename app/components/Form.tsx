@@ -24,6 +24,8 @@ export const Form = () => {
   const [price, setPrice] = useState<MultipleRangeItem>({ min: 0, max: 10000 });
   const [images, setImages] = useState<File[]>([]);
   const [wimages, setWImages] = useState<File[]>([]);
+  const date = new Date();
+  const [dob, setDob] = useState<Date>(date);
 
   const options: Option[] = [
     { title: "Male", id: "1" },
@@ -31,6 +33,7 @@ export const Form = () => {
     { title: "Other", id: "3" },
   ];
 
+  console.log(dob);
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const data = {
@@ -42,6 +45,7 @@ export const Form = () => {
       price: price,
       images: images,
       wimages: wimages,
+      dob: dob,
     };
 
     try {
@@ -60,6 +64,7 @@ export const Form = () => {
       setStatus([]);
       setPrice({ min: 0, max: 10000 });
       setImages([]);
+      setDob(new Date());
     }
   };
 
@@ -117,7 +122,7 @@ export const Form = () => {
         showImages={false}
         values={wimages}
       />
-      <InputDate />
+      <InputDate onChange={(value: Date) => setDob(value)} />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
       </button>
