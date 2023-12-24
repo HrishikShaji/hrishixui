@@ -12,6 +12,7 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 interface InputDateProps {
   onChange: (date: Date) => void;
   date: Date;
+  reset: boolean;
 }
 
 export const InputDate: React.FC<InputDateProps> = (props) => {
@@ -41,6 +42,16 @@ export const InputDate: React.FC<InputDateProps> = (props) => {
     setDate(selectedDate);
     props.onChange(selectedDate);
   }, [day, month, year]);
+
+  useEffect(() => {
+    if (props.reset) {
+      setMonth(props.date.getMonth());
+      setYear(props.date.getFullYear());
+      setDay(props.date.getDate());
+      setDate(props.date);
+    }
+  }, [props.reset, props.date]);
+
   const firstDayOfMonth = startOfMonth(date);
   const lastDayOfMonth = endOfMonth(date);
   const daysInMonth = eachDayOfInterval({
