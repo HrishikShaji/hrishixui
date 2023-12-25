@@ -35,19 +35,20 @@ const initialValues = {
 
 export const Form = () => {
   const [values, setValues] = useState(initialValues);
-  const [reset, setReset] = useState(false);
+  const [imageReset, setImageReset] = useState(false);
+  const [dateReset, setDateReset] = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const data = {
-      name: initialValues.name,
-      number: initialValues.number,
-      description: initialValues.description,
-      gender: initialValues.gender,
-      status: initialValues.status,
-      price: initialValues.price,
-      images: initialValues.images,
-      dob: initialValues.dob,
+      name: values.name,
+      number: values.number,
+      description: values.description,
+      gender: values.gender,
+      status: values.status,
+      price: values.price,
+      images: values.images,
+      dob: values.dob,
     };
 
     try {
@@ -60,7 +61,8 @@ export const Form = () => {
       console.error("Error", error);
     } finally {
       setValues(initialValues);
-      setReset(true);
+      setImageReset(true);
+      setDateReset(true);
     }
   };
 
@@ -113,11 +115,11 @@ export const Form = () => {
         multiple={true}
       />
       <InputMultipleRange
-        minValues={values.price.min}
-        maxValues={values.price.max}
+        values={{ min: values.price.min, max: values.price.max }}
         onChange={(value: MultipleRangeItem) =>
           handleSetter({ id: "price", value: value })
         }
+        range={{ min: 0, max: 10000 }}
       />
       <InputImage
         multiple={true}
@@ -127,11 +129,12 @@ export const Form = () => {
         id="1"
         showImages={true}
         values={values.images}
+        reset={imageReset}
       />
       <InputDate
         onChange={(value: Date) => handleSetter({ id: "dob", value: value })}
         date={values.dob}
-        reset={reset}
+        reset={dateReset}
       />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit

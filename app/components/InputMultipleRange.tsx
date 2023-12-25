@@ -6,40 +6,40 @@ export type MultipleRangeItem = {
 };
 
 interface InputMultipleRangeProps {
-  minValues: number;
-  maxValues: number;
+  values: MultipleRangeItem;
+  range: MultipleRangeItem;
   onChange: (item: MultipleRangeItem) => void;
 }
 
 export const InputMultipleRange: React.FC<InputMultipleRangeProps> = ({
-  minValues,
-  maxValues,
   onChange,
+  range,
+  values,
 }) => {
-  const [minValue, setMinValue] = useState(minValues);
-  const [maxValue, setMaxValue] = useState(maxValues);
+  const [minValue, setMinValue] = useState(values.min);
+  const [maxValue, setMaxValue] = useState(values.max);
+  const [left, setLeft] = useState("0%");
+  const [right, setRight] = useState("0%");
   const minInputRef = useRef<HTMLInputElement | null>(null);
   const maxInputRef = useRef<HTMLInputElement | null>(null);
   const progressRef = useRef<HTMLDivElement | null>(null);
-  const [left, setLeft] = useState("0%");
-  const [right, setRight] = useState("0%");
 
   useEffect(() => {
-    if (minValues === 0 && maxValues === 10000) {
-      setMinValue(0);
-      setMaxValue(10000);
+    if (values.min === range.min && values.max === range.max) {
+      setMinValue(range.min);
+      setMaxValue(range.max);
     }
     const left = minInputRef.current
-      ? (minValues / parseInt(minInputRef.current.max)) * 100 + "%"
+      ? (values.min / parseInt(minInputRef.current.max)) * 100 + "%"
       : "0%";
 
     const right = maxInputRef.current
-      ? 100 - (maxValues / parseInt(maxInputRef.current.max)) * 100 + "%"
+      ? 100 - (values.max / parseInt(maxInputRef.current.max)) * 100 + "%"
       : "0%";
 
     setLeft(left);
     setRight(right);
-  }, [minValues, maxValues]);
+  }, [values.max, values.min]);
 
   useEffect(() => {
     onChange({ min: minValue, max: maxValue });
@@ -71,7 +71,7 @@ export const InputMultipleRange: React.FC<InputMultipleRangeProps> = ({
         });
       });
     }
-  }, [maxValue, minValue, minValues, maxValues]);
+  }, [maxValue, minValue, values.min, values.max]);
   return (
     <div>
       <div
@@ -108,8 +108,8 @@ export const InputMultipleRange: React.FC<InputMultipleRangeProps> = ({
           ref={minInputRef}
           type="range"
           className="range-min"
-          min="0"
-          max="10000"
+          min={range.min.toString()}
+          max={range.max.toString()}
           value={minValue}
           onChange={(e) => setMinValue(Number(e.target.value))}
         />
@@ -126,8 +126,8 @@ export const InputMultipleRange: React.FC<InputMultipleRangeProps> = ({
           ref={maxInputRef}
           type="range"
           className="range-max"
-          min="0"
-          max="10000"
+          min={range.min.toString()}
+          max={range.max.toString()}
           value={maxValue}
           onChange={(e) => setMaxValue(Number(e.target.value))}
         />

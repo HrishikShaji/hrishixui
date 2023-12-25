@@ -9,6 +9,7 @@ interface InputImageProps {
   multiple: boolean;
   showImages: boolean;
   values: File[];
+  reset: boolean;
 }
 
 export const InputImage: React.FC<InputImageProps> = (props) => {
@@ -19,10 +20,10 @@ export const InputImage: React.FC<InputImageProps> = (props) => {
   const imageButtonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
-    if (props.values.length === 0) {
+    if (props.reset) {
       setImages([]);
     }
-  }, [props.values]);
+  }, [props.reset]);
 
   useEffect(() => {
     const handleClickOutside: EventListener = (e) => {
