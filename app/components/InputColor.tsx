@@ -8,7 +8,15 @@ export type Color = {
   light: number;
 };
 
-const GenerateGrids = ({ cols, hue }: { cols: number; hue: string }) => {
+const GenerateGrids = ({
+  cols,
+  hue,
+  onClick,
+}: {
+  cols: number;
+  hue: string;
+  onClick: (color: Color) => void;
+}) => {
   const grids: Color[][] = useMemo(() => {
     let newGrids: Color[][] = [];
     for (let r = 0; r < cols; r++) {
@@ -31,13 +39,20 @@ const GenerateGrids = ({ cols, hue }: { cols: number; hue: string }) => {
             console.log(item);
             return (
               <div
+                onClick={() =>
+                  onClick({
+                    hue: parseInt(hue),
+                    saturation: item.saturation,
+                    light: item.light,
+                  })
+                }
                 style={{
                   backgroundColor: `hsl(${parseInt(hue)},${item.saturation}%,${
                     item.light
                   }%) `,
                 }}
                 key={k}
-                className="w-[1px] h-[1px] bg-white text-center"
+                className="w-5 h-5 cursor-pointer"
               ></div>
             );
           })}
@@ -47,12 +62,29 @@ const GenerateGrids = ({ cols, hue }: { cols: number; hue: string }) => {
   );
 };
 
+const initialColor: Color = {
+  hue: 10,
+  saturation: 70,
+  light: 30,
+};
+
 export const InputColor = () => {
   const [hue, setHue] = useState("10");
+  const [currentColor, setCurrentColor] = useState<Color>(initialColor);
 
   return (
     <div>
-      <GenerateGrids cols={100} hue={hue} />
+      <div
+        className="h-10 w-10 rounded-md"
+        style={{
+          backgroundColor: `hsl(${currentColor.hue},${currentColor.saturation}%,${currentColor.light}%) `,
+        }}
+      ></div>
+      <GenerateGrids
+        cols={10}
+        hue={hue}
+        onClick={(color: Color) => setCurrentColor(color)}
+      />
       <div className="">
         <input
           className="w-full"
