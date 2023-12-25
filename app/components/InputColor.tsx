@@ -1,21 +1,39 @@
+export type Color = {
+  hue: number;
+  saturation: number;
+  light: number;
+};
+
 export const InputColor = () => {
   const grids = () => {
-    const grids: string[][] = [];
-    for (let r = 0; r < 10; r++) {
+    const cols = 100;
+    let grids: Color[][] = [];
+    for (let r = 0; r < cols; r++) {
       grids[r] = [];
-      for (let c = 0; c < 10; c++) {
-        grids[r][c] = "1";
+      for (let c = 0; c < cols; c++) {
+        grids[r][c] = {
+          hue: c * (100 / cols),
+          saturation: c * (100 / cols),
+          light: c * (100 / cols),
+        };
       }
     }
     return (
-      <div className="flex gap-1">
+      <div className="flex ">
         {grids.map((grid, i) => (
-          <div key={i} className="flex flex-col gap-1">
-            {grid.map((item, k) => (
-              <div key={k} className="w-5 h-5 bg-white text-center">
-                {item}
-              </div>
-            ))}
+          <div key={i} className="flex flex-col">
+            {grid.map((item, k) => {
+              console.log(item);
+              return (
+                <div
+                  style={{
+                    backgroundColor: `hsl(${item.hue},${item.saturation}%,${item.light}%)`,
+                  }}
+                  key={k}
+                  className="w-[1px] h-[1px] bg-white text-center"
+                ></div>
+              );
+            })}
           </div>
         ))}
       </div>
