@@ -8,57 +8,55 @@ export type Color = {
   light: number;
 };
 
-const getGrids = () => {
-  const cols = 10;
+const GenerateGrids = ({ cols, hue }: { cols: number; hue: string }) => {
   let grids: Color[][] = [];
   for (let r = 0; r < cols; r++) {
     grids[r] = [];
     for (let c = 0; c < cols; c++) {
       grids[r][c] = {
-        hue: c * (100 / cols),
+        hue: c * (360 / cols),
         saturation: c * (100 / cols),
-        light: c * (100 / cols),
+        light: r * (100 / cols),
       };
     }
   }
-  return grids;
+  return (
+    <div className="flex ">
+      {grids.map((grid, i) => (
+        <div key={i} className="flex flex-col">
+          {grid.map((item, k) => {
+            console.log(item);
+            return (
+              <div
+                style={{
+                  backgroundColor: `hsl(${parseInt(hue)},${item.saturation}%,${
+                    item.light
+                  }%) `,
+                }}
+                key={k}
+                className="w-5 h-5 bg-white text-center"
+              ></div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export const InputColor = () => {
-  const [grids, setGrids] = useState<Color[][]>([]);
-  const [range, setRange] = useState("");
-  useEffect(() => {
-    setGrids(getGrids());
-  }, [range]);
+  const [hue, setHue] = useState("10");
+
   return (
     <div>
+      <GenerateGrids cols={10} hue={hue} />
       <div className="">
-        <div className="flex ">
-          {grids.map((grid, i) => (
-            <div key={i} className="flex flex-col">
-              {grid.map((item, k) => {
-                console.log(item);
-                return (
-                  <div
-                    style={{
-                      backgroundColor: `hsl(${parseInt(range)},${
-                        item.saturation
-                      }%,${item.light}%) `,
-                    }}
-                    key={k}
-                    className="w-10 h-10 bg-white text-center"
-                  ></div>
-                );
-              })}
-            </div>
-          ))}
-        </div>
         <input
           className="w-full"
           type="range"
           min="0"
           max="360"
-          onChange={(e) => setRange(e.target.value)}
+          onChange={(e) => setHue(e.target.value)}
         />
       </div>
     </div>
