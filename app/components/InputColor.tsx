@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export type Color = {
   hue: number;
@@ -9,17 +9,20 @@ export type Color = {
 };
 
 const GenerateGrids = ({ cols, hue }: { cols: number; hue: string }) => {
-  let grids: Color[][] = [];
-  for (let r = 0; r < cols; r++) {
-    grids[r] = [];
-    for (let c = 0; c < cols; c++) {
-      grids[r][c] = {
-        hue: c * (360 / cols),
-        saturation: c * (100 / cols),
-        light: r * (100 / cols),
-      };
+  const grids: Color[][] = useMemo(() => {
+    let newGrids: Color[][] = [];
+    for (let r = 0; r < cols; r++) {
+      newGrids[r] = [];
+      for (let c = 0; c < cols; c++) {
+        newGrids[r][c] = {
+          hue: c * (360 / cols),
+          saturation: c * (100 / cols),
+          light: r * (100 / cols),
+        };
+      }
     }
-  }
+    return newGrids;
+  }, [cols]);
   return (
     <div className="flex ">
       {grids.map((grid, i) => (
@@ -34,7 +37,7 @@ const GenerateGrids = ({ cols, hue }: { cols: number; hue: string }) => {
                   }%) `,
                 }}
                 key={k}
-                className="w-5 h-5 bg-white text-center"
+                className="w-[1px] h-[1px] bg-white text-center"
               ></div>
             );
           })}
@@ -49,7 +52,7 @@ export const InputColor = () => {
 
   return (
     <div>
-      <GenerateGrids cols={10} hue={hue} />
+      <GenerateGrids cols={100} hue={hue} />
       <div className="">
         <input
           className="w-full"
