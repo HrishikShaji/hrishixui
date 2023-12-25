@@ -15,37 +15,39 @@ const checkBoxOptions: CheckBoxOption[] = [
   { title: "Married", id: "2" },
   { title: "Not disclosing", id: "3" },
 ];
+
+const options: Option[] = [
+  { title: "Male", id: "1" },
+  { title: "Female", id: "2" },
+  { title: "Other", id: "3" },
+];
+
+const initialValues = {
+  name: "",
+  number: 0,
+  description: "",
+  gender: { id: "", title: "" },
+  status: [],
+  price: { min: 0, max: 10000 },
+  images: [],
+  dob: new Date(),
+};
+
 export const Form = () => {
-  const [name, setName] = useState("");
-  const [number, setNumber] = useState(0);
-  const [description, setDescription] = useState("");
-  const [gender, setGender] = useState<Option>({ id: "", title: "" });
-  const [status, setStatus] = useState<CheckBoxOption[]>([]);
-  const [price, setPrice] = useState<MultipleRangeItem>({ min: 0, max: 10000 });
-  const [images, setImages] = useState<File[]>([]);
-  const [wimages, setWImages] = useState<File[]>([]);
-  const date = new Date();
-  const [dob, setDob] = useState<Date>(date);
+  const [values, setValues] = useState(initialValues);
+  const [reset, setReset] = useState(false);
 
-  const options: Option[] = [
-    { title: "Male", id: "1" },
-    { title: "Female", id: "2" },
-    { title: "Other", id: "3" },
-  ];
-
-  console.log(dob);
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const data = {
-      name: name,
-      number: number,
-      description: description,
-      gender: gender,
-      status: status,
-      price: price,
-      images: images,
-      wimages: wimages,
-      dob: dob,
+      name: initialValues.name,
+      number: initialValues.number,
+      description: initialValues.description,
+      gender: initialValues.gender,
+      status: initialValues.status,
+      price: initialValues.price,
+      images: initialValues.images,
+      dob: initialValues.dob,
     };
 
     try {
@@ -57,15 +59,16 @@ export const Form = () => {
     } catch (error) {
       console.error("Error", error);
     } finally {
-      setName("");
-      setNumber(0);
-      setDescription("");
-      setGender({ id: "", title: "" });
-      setStatus([]);
-      setPrice({ min: 0, max: 10000 });
-      setImages([]);
-      setDob(new Date());
+      setValues(initialValues);
+      setReset(true);
     }
+  };
+
+  const handleSetter = ({ id, value }: { id: string; value: any }) => {
+    setValues((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
   };
 
   return (
@@ -74,55 +77,62 @@ export const Form = () => {
       className="bg-neutral-500 rounded-md p-5 grid grid-cols-5 gap-5"
     >
       <InputText
-        onChange={(value: string) => setName(value)}
-        value={name}
+        onChange={(value: string) => handleSetter({ id: "name", value: value })}
+        value={values.name}
         placeholder="Name..."
         label="Name"
       />
       <InputNumber
-        onChange={(value: number) => setNumber(value)}
-        value={number}
+        onChange={(value: number) =>
+          handleSetter({ id: "number", value: value })
+        }
+        value={values.number}
         placeholder="Number..."
         label="Number"
       />
       <InputTextArea
-        onChange={(value: string) => setDescription(value)}
-        value={description}
+        onChange={(value: string) =>
+          handleSetter({ id: "description", value: value })
+        }
+        value={values.description}
         placeholder="Description..."
         label="Description"
       />
       <InputSelect
-        onChange={(item: Option) => setGender(item)}
-        item={gender}
+        onChange={(item: Option) => handleSetter({ id: "gender", value: item })}
+        item={values.gender}
         options={options}
       />
       <InputCheckBox
         options={checkBoxOptions}
         label="Status"
-        selectedItem={status}
-        setSelectedItem={setStatus}
+        selectedItem={values.status}
+        onChange={(value: CheckBoxOption[]) =>
+          handleSetter({ id: "status", value: value })
+        }
         multiple={true}
       />
       <InputMultipleRange
-        minValues={price.min}
-        maxValues={price.max}
-        onChange={(value: MultipleRangeItem) => setPrice(value)}
+        minValues={values.price.min}
+        maxValues={values.price.max}
+        onChange={(value: MultipleRangeItem) =>
+          handleSetter({ id: "price", value: value })
+        }
       />
       <InputImage
         multiple={true}
-        onChange={(images: File[]) => setImages(images)}
+        onChange={(images: File[]) =>
+          handleSetter({ id: "images", value: images })
+        }
         id="1"
         showImages={true}
-        values={images}
+        values={values.images}
       />
-      <InputImage
-        multiple={true}
-        onChange={(images: File[]) => setWImages(images)}
-        id="2"
-        showImages={false}
-        values={wimages}
+      <InputDate
+        onChange={(value: Date) => handleSetter({ id: "dob", value: value })}
+        date={values.dob}
+        reset={reset}
       />
-      <InputDate onChange={(value: Date) => setDob(value)} />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
       </button>

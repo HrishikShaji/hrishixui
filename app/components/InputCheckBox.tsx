@@ -9,7 +9,7 @@ interface InputCheckBoxProps {
   options: CheckBoxOption[];
   label: string;
   selectedItem: CheckBoxOption[];
-  setSelectedItem: Dispatch<SetStateAction<CheckBoxOption[]>>;
+  onChange: (value: CheckBoxOption[]) => void;
   multiple: boolean;
 }
 
@@ -20,13 +20,13 @@ export const InputCheckBox: React.FC<InputCheckBoxProps> = (props) => {
   ) => {
     if (e.target.checked) {
       if (props.multiple) {
-        props.setSelectedItem([...props.selectedItem, item]);
+        props.onChange([...props.selectedItem, item]);
       } else {
-        props.setSelectedItem([item]);
+        props.onChange([item]);
       }
     } else {
-      props.setSelectedItem((prev) =>
-        prev.filter((option) => option.id !== item.id),
+      props.onChange(
+        props.selectedItem.filter((option) => option.id !== item.id),
       );
     }
   };

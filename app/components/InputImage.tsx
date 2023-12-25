@@ -87,7 +87,7 @@ export const InputImage: React.FC<InputImageProps> = (props) => {
         <>
           <button
             ref={imageButtonRef}
-            type="submit"
+            type="button"
             className="p-1 rounded-md bg-blue-500 text-sm text-white"
             onClick={() => setIsOpen(!isOpen)}
           >

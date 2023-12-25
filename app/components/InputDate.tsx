@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { FaCalendar } from "react-icons/fa";
 import {
   eachDayOfInterval,
   endOfMonth,
@@ -63,10 +64,10 @@ export const InputDate: React.FC<InputDateProps> = (props) => {
   const endingDayOfMonth = totalDays % 7 === 0 ? 0 : 7 - (totalDays % 7);
   return (
     <div className="">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between gap-7 border-[2px] border-black rounded-md p-1 items-center bg-white">
         <h1>{`${day}/${month + 1}/${year}`}</h1>
         <button type="button" onClick={() => setIsOpen(!isOpen)}>
-          $
+          <FaCalendar />
         </button>{" "}
       </div>
       {isOpen ? (
