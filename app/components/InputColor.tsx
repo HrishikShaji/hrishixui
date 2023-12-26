@@ -8,38 +8,73 @@ export type Color = {
   light: number;
 };
 
+export type RgbColor = {
+  r: number;
+  g: number;
+  b: number;
+};
 const initialColor: Color = {
   hue: 180,
   saturation: 50,
   light: 50,
 };
 
+const initialRgbColor: RgbColor = {
+  r: 20,
+  g: 40,
+  b: 60,
+};
+
+const hslValues = [
+  {
+    min: "0",
+    max: "360",
+    title: "Hue",
+    name: "hue",
+  },
+  {
+    min: "0",
+    max: "100",
+    title: "Saturation",
+    name: "saturation",
+  },
+  {
+    min: "0",
+    max: "100",
+    title: "Lumination",
+    name: "light",
+  },
+];
+const rgbValues = [
+  {
+    min: "0",
+    max: "255",
+    title: "R",
+    name: "r",
+  },
+  {
+    min: "0",
+    max: "255",
+    title: "G",
+    name: "g",
+  },
+  {
+    min: "0",
+    max: "255",
+    title: "B",
+    name: "b",
+  },
+];
 const modes = ["HSL", "RGB", "HexCode"];
 
 export const InputColor = () => {
   const [currentColor, setCurrentColor] = useState<Color>(initialColor);
   const [mode, setMode] = useState(0);
   const [hsl, setHsl] = useState<Color>(initialColor);
-
-  const hslValues = [
-    {
-      min: "0",
-      max: "360",
-      title: "Hue",
-      name: "hue",
-    },
-    {
-      min: "0",
-      max: "100",
-      title: "Saturation",
-      name: "saturation",
-    },
-    {
-      min: "0",
-      max: "100",
-      title: "Lumination",
-      name: "light",
-    },
+  const [rgb, setRgb] = useState<RgbColor>(initialRgbColor);
+  const values = [
+    { inputs: hslValues, value: hsl, setterFunction: setHsl },
+    { inputs: rgbValues, value: rgb, setterFunction: setRgb },
   ];
 
   return (
@@ -76,12 +111,12 @@ export const InputColor = () => {
           </button>
         </div>
         <div className="">
-          {hslValues.map((item) => (
+          {values[mode].inputs.map((item) => (
             <SliderInput
               key={item.title}
               {...item}
-              value={hsl}
-              setterFunction={setHsl}
+              value={values[mode].value}
+              setterFunction={values[mode].setterFunction as any}
             />
           ))}
         </div>
@@ -156,10 +191,10 @@ const GenerateGrids = ({
 
 interface SliderInputProps {
   title: string;
-  setterFunction: Dispatch<SetStateAction<Color>>;
+  setterFunction: Dispatch<SetStateAction<Record<string, any>>>;
   min: string;
   max: string;
-  value: Color;
+  value: Record<string, any>;
   name: string;
 }
 
@@ -184,7 +219,7 @@ const SliderInput: React.FC<SliderInputProps> = (props) => {
           min={props.min}
           max={props.max}
           type="number"
-          value={props.value[props.name] as any}
+          value={props.value[props.name]}
           onChange={(e) =>
             props.setterFunction((prev) => ({
               ...prev,
