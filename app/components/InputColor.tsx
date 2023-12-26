@@ -13,11 +13,34 @@ const initialColor: Color = {
   saturation: 50,
   light: 50,
 };
+
+const modes = ["HSL", "RGB", "HexCode"];
+
 export const InputColor = () => {
-  const [hue, setHue] = useState(10);
-  const [saturation, setSaturation] = useState(70);
-  const [light, setLight] = useState(30);
   const [currentColor, setCurrentColor] = useState<Color>(initialColor);
+  const [mode, setMode] = useState(0);
+  const [hsl, setHsl] = useState<Color>(initialColor);
+
+  const hslValues = [
+    {
+      min: "0",
+      max: "360",
+      title: "Hue",
+      name: "hue",
+    },
+    {
+      min: "0",
+      max: "100",
+      title: "Saturation",
+      name: "saturation",
+    },
+    {
+      min: "0",
+      max: "100",
+      title: "Lumination",
+      name: "light",
+    },
+  ];
 
   return (
     <div>
@@ -34,33 +57,33 @@ export const InputColor = () => {
         <GenerateGrids
           currentColor={currentColor}
           cols={15}
-          hue={hue}
-          saturation={saturation}
-          light={light}
+          hue={hsl.hue}
+          saturation={hsl.saturation}
+          light={hsl.light}
           onClick={(color: Color) => setCurrentColor(color)}
         />
+        <div className="w-full justify-between flex">
+          <button
+            onClick={() => setMode((prev) => (prev === 0 ? 2 : prev - 1))}
+          >
+            prev
+          </button>
+          <h1>{modes[mode]}</h1>
+          <button
+            onClick={() => setMode((prev) => (prev === 2 ? 0 : prev + 1))}
+          >
+            next
+          </button>
+        </div>
         <div className="">
-          <SliderInput
-            value={hue}
-            min="0"
-            max="360"
-            setterFunction={setHue}
-            title="Hue"
-          />
-          <SliderInput
-            value={saturation}
-            min="0"
-            max="100"
-            setterFunction={setSaturation}
-            title="Saturation"
-          />
-          <SliderInput
-            value={light}
-            min="0"
-            max="100"
-            setterFunction={setLight}
-            title="Light"
-          />
+          {hslValues.map((item) => (
+            <SliderInput
+              key={item.title}
+              {...item}
+              value={hsl}
+              setterFunction={setHsl}
+            />
+          ))}
         </div>
       </div>
     </div>
@@ -133,10 +156,11 @@ const GenerateGrids = ({
 
 interface SliderInputProps {
   title: string;
-  setterFunction: Dispatch<SetStateAction<number>>;
+  setterFunction: Dispatch<SetStateAction<Color>>;
   min: string;
   max: string;
-  value: number;
+  value: Color;
+  name: string;
 }
 
 const SliderInput: React.FC<SliderInputProps> = (props) => {
@@ -149,14 +173,24 @@ const SliderInput: React.FC<SliderInputProps> = (props) => {
           type="range"
           min={props.min}
           max={props.max}
-          onChange={(e) => props.setterFunction(parseInt(e.target.value))}
+          onChange={(e) =>
+            props.setterFunction((prev) => ({
+              ...prev,
+              [props.name]: parseInt(e.target.value),
+            }))
+          }
         />
         <input
           min={props.min}
           max={props.max}
           type="number"
-          value={props.value}
-          onChange={(e) => props.setterFunction(parseInt(e.target.value))}
+          value={props.value[props.name] as any}
+          onChange={(e) =>
+            props.setterFunction((prev) => ({
+              ...prev,
+              [props.name]: parseInt(e.target.value),
+            }))
+          }
           className="w-16 focus:outline-none bg-gray-500 p-1 rounded-md"
         />
       </div>
