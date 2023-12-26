@@ -92,29 +92,56 @@ export const InputColor = () => {
         onClick={(color: Color) => setCurrentColor(color)}
       />
       <div className="">
-        <input
-          className="w-full"
-          type="range"
-          min="0"
-          max="360"
-          onChange={(e) => setHue(e.target.value)}
-        />
-        <input
-          className="w-full mt-2"
-          type="range"
-          min="0"
-          max="100"
-          value={saturation}
-          onChange={(e) => setSaturation(Number(e.target.value))}
-        />
-        <input
-          className="w-full mt-2"
-          type="range"
-          min="0"
-          max="100"
-          value={light}
-          onChange={(e) => setLight(Number(e.target.value))}
-        />
+        <div className="flex gap-2">
+          <input
+            className="w-full"
+            type="range"
+            min="0"
+            max="360"
+            onChange={(e) => setHue(e.target.value)}
+          />
+          <input
+            min="0"
+            max="360"
+            type="number"
+            value={parseInt(hue)}
+            onChange={(e) => setHue(e.target.value.toString())}
+          />
+        </div>
+        <div className="flex gap-2">
+          <input
+            className="w-full mt-2"
+            type="range"
+            min="0"
+            max="100"
+            value={saturation}
+            onChange={(e) => setSaturation(Number(e.target.value))}
+          />
+          <input
+            min="0"
+            max="100"
+            type="number"
+            value={saturation}
+            onChange={(e) => setSaturation(parseInt(e.target.value))}
+          />
+        </div>
+        <div className="flex gap-2">
+          <input
+            className="w-full mt-2"
+            type="range"
+            min="0"
+            max="100"
+            value={light}
+            onChange={(e) => setLight(Number(e.target.value))}
+          />
+          <input
+            min="0"
+            max="100"
+            type="number"
+            value={light}
+            onChange={(e) => setLight(parseInt(e.target.value))}
+          />
+        </div>
       </div>
     </div>
   );
