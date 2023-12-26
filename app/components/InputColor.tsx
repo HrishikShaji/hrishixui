@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useMemo, useState } from "react";
 
 export type Color = {
   hue: number;
@@ -8,6 +8,64 @@ export type Color = {
   light: number;
 };
 
+const initialColor: Color = {
+  hue: 180,
+  saturation: 50,
+  light: 50,
+};
+export const InputColor = () => {
+  const [hue, setHue] = useState(10);
+  const [saturation, setSaturation] = useState(70);
+  const [light, setLight] = useState(30);
+  const [currentColor, setCurrentColor] = useState<Color>(initialColor);
+
+  return (
+    <div>
+      <input type="color" />
+      <div
+        className="h-10 flex rounded-md"
+        style={{
+          backgroundColor: `hsl(${currentColor.hue},${currentColor.saturation}%,${currentColor.light}%) `,
+        }}
+      >
+        {currentColor.hue}
+      </div>
+      <div className="flex flex-col p-1 bg-white rounded-md">
+        <GenerateGrids
+          currentColor={currentColor}
+          cols={15}
+          hue={hue}
+          saturation={saturation}
+          light={light}
+          onClick={(color: Color) => setCurrentColor(color)}
+        />
+        <div className="">
+          <SliderInput
+            value={hue}
+            min="0"
+            max="360"
+            setterFunction={setHue}
+            title="Hue"
+          />
+          <SliderInput
+            value={saturation}
+            min="0"
+            max="100"
+            setterFunction={setSaturation}
+            title="Saturation"
+          />
+          <SliderInput
+            value={light}
+            min="0"
+            max="100"
+            setterFunction={setLight}
+            title="Light"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 const GenerateGrids = ({
   cols,
   hue,
@@ -30,8 +88,8 @@ const GenerateGrids = ({
       for (let c = 0; c < cols; c++) {
         newGrids[r][c] = {
           hue: c * (360 / cols),
-          saturation: saturation + c * ((100 - saturation) / cols), // Dynamic saturation
-          light: light + r * ((100 - light) / cols), // Dynamic light
+          saturation: saturation + c * ((100 - saturation) / cols),
+          light: light + r * ((100 - light) / cols),
         };
       }
     }
@@ -53,11 +111,18 @@ const GenerateGrids = ({
                   })
                 }
                 style={{
+                  borderColor: `${
+                    hue === currentColor.hue &&
+                    item.saturation === currentColor.saturation &&
+                    item.light === currentColor.light
+                      ? "black"
+                      : ""
+                  }`,
                   backgroundColor: `hsl(${hue},${item.saturation}%,${item.light}%) `,
                 }}
                 key={k}
                 className="w-5 h-5 cursor-pointer border-2"
-              ></div>
+              />
             );
           })}
         </div>
@@ -66,89 +131,34 @@ const GenerateGrids = ({
   );
 };
 
-const initialColor: Color = {
-  hue: 180,
-  saturation: 50,
-  light: 50,
-};
+interface SliderInputProps {
+  title: string;
+  setterFunction: Dispatch<SetStateAction<number>>;
+  min: string;
+  max: string;
+  value: number;
+}
 
-export const InputColor = () => {
-  const [hue, setHue] = useState(10);
-  const [saturation, setSaturation] = useState(70);
-  const [light, setLight] = useState(30);
-  const [currentColor, setCurrentColor] = useState<Color>(initialColor);
-
+const SliderInput: React.FC<SliderInputProps> = (props) => {
   return (
-    <div>
-      <div
-        className="h-10 flex rounded-md"
-        style={{
-          backgroundColor: `hsl(${currentColor.hue},${currentColor.saturation}%,${currentColor.light}%) `,
-        }}
-      >
-        {`${currentColor.hue}
-          ${currentColor.light.toString()}
-          ${currentColor.saturation.toString()}`}
-      </div>
-      <GenerateGrids
-        currentColor={currentColor}
-        cols={10}
-        hue={hue}
-        saturation={saturation}
-        light={light}
-        onClick={(color: Color) => setCurrentColor(color)}
-      />
-      <div className="">
-        <div className="flex gap-2">
-          <input
-            className="w-full"
-            type="range"
-            min="0"
-            max="360"
-            onChange={(e) => setHue(parseInt(e.target.value))}
-          />
-          <input
-            min="0"
-            max="360"
-            type="number"
-            value={hue}
-            onChange={(e) => setHue(parseInt(e.target.value))}
-          />
-        </div>
-        <div className="flex gap-2">
-          <input
-            className="w-full mt-2"
-            type="range"
-            min="0"
-            max="100"
-            value={saturation}
-            onChange={(e) => setSaturation(parseInt(e.target.value))}
-          />
-          <input
-            min="0"
-            max="100"
-            type="number"
-            value={saturation}
-            onChange={(e) => setSaturation(parseInt(e.target.value))}
-          />
-        </div>
-        <div className="flex gap-2">
-          <input
-            className="w-full mt-2"
-            type="range"
-            min="0"
-            max="100"
-            value={light}
-            onChange={(e) => setLight(parseInt(e.target.value))}
-          />
-          <input
-            min="0"
-            max="100"
-            type="number"
-            value={light}
-            onChange={(e) => setLight(parseInt(e.target.value))}
-          />
-        </div>
+    <div className="flex flex-col  ">
+      <h1>{props.title}</h1>
+      <div className="flex gap-2">
+        <input
+          className="w-full"
+          type="range"
+          min={props.min}
+          max={props.max}
+          onChange={(e) => props.setterFunction(parseInt(e.target.value))}
+        />
+        <input
+          min={props.min}
+          max={props.max}
+          type="number"
+          value={props.value}
+          onChange={(e) => props.setterFunction(parseInt(e.target.value))}
+          className="w-16 focus:outline-none bg-gray-500 p-1 rounded-md"
+        />
       </div>
     </div>
   );
