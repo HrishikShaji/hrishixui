@@ -1,6 +1,7 @@
 "use client";
 
 import { Dispatch, SetStateAction, useEffect, useMemo, useState } from "react";
+import { useGridsLogic } from "./hooks/form";
 
 export type Color = {
   hue: number;
@@ -124,14 +125,7 @@ export const InputColor = () => {
     </div>
   );
 };
-const GenerateGrids = ({
-  cols,
-  hue,
-  saturation,
-  light,
-  onClick,
-  currentColor,
-}: {
+const GenerateGrids = (props: {
   cols: number;
   hue: number;
   saturation: number;
@@ -139,21 +133,11 @@ const GenerateGrids = ({
   onClick: (color: Color) => void;
   currentColor: Color;
 }) => {
-  const grids: Color[][] = useMemo(() => {
-    let newGrids: Color[][] = [];
-    for (let r = 0; r < cols; r++) {
-      newGrids[r] = [];
-      for (let c = 0; c < cols; c++) {
-        newGrids[r][c] = {
-          hue: c * (360 / cols),
-          saturation: saturation + c * ((100 - saturation) / cols),
-          light: light + r * ((100 - light) / cols),
-        };
-      }
-    }
-    return newGrids;
-  }, [cols, saturation, light]);
-
+  const grids = useGridsLogic({
+    cols: props.cols,
+    saturation: props.saturation,
+    light: props.light,
+  });
   return (
     <div className="flex ">
       {grids.map((grid, i) => (
@@ -162,21 +146,21 @@ const GenerateGrids = ({
             return (
               <div
                 onClick={() =>
-                  onClick({
-                    hue: hue,
+                  props.onClick({
+                    hue: props.hue,
                     saturation: item.saturation,
                     light: item.light,
                   })
                 }
                 style={{
                   borderColor: `${
-                    hue === currentColor.hue &&
-                    item.saturation === currentColor.saturation &&
-                    item.light === currentColor.light
+                    props.hue === props.currentColor.hue &&
+                    item.saturation === props.currentColor.saturation &&
+                    item.light === props.currentColor.light
                       ? "black"
                       : ""
                   }`,
-                  backgroundColor: `hsl(${hue},${item.saturation}%,${item.light}%) `,
+                  backgroundColor: `hsl(${props.hue},${item.saturation}%,${item.light}%) `,
                 }}
                 key={k}
                 className="w-5 h-5 cursor-pointer border-2"
