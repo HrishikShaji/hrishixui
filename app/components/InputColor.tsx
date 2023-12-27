@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useGridsLogic } from "./hooks/form";
 import { Counter } from "./Counter";
 
@@ -143,35 +143,22 @@ const GenerateGrids = (props: {
     saturation: props.saturation,
     light: props.light,
   });
+
   return (
     <div className="flex ">
       {grids.map((grid, i) => (
         <div key={i} className="flex flex-col">
-          {grid.map((item, k) => {
-            return (
-              <div
-                onClick={() =>
-                  props.onClick({
-                    hue: props.hue,
-                    saturation: item.saturation,
-                    light: item.light,
-                  })
-                }
-                style={{
-                  borderColor: `${
-                    props.hue === props.currentColor.hue &&
-                    item.saturation === props.currentColor.saturation &&
-                    item.light === props.currentColor.light
-                      ? "black"
-                      : ""
-                  }`,
-                  backgroundColor: `hsl(${props.hue},${item.saturation}%,${item.light}%) `,
-                }}
-                key={k}
-                className="w-5 h-5 cursor-pointer border-2"
-              />
-            );
-          })}
+          {grid.map((item, k) => (
+            <Grid
+              saturation={props.saturation}
+              light={props.light}
+              hue={props.hue}
+              key={k}
+              currentColor={props.currentColor}
+              item={item}
+              onClick={props.onClick}
+            />
+          ))}
         </div>
       ))}
     </div>
@@ -203,6 +190,7 @@ const SliderInput: React.FC<SliderInputProps> = (props) => {
               [props.name]: parseInt(e.target.value),
             }))
           }
+          value={props.value[props.name]}
         />
         <input
           min={props.min}
@@ -230,5 +218,40 @@ const SliderInput: React.FC<SliderInputProps> = (props) => {
         />
       </div>
     </div>
+  );
+};
+
+interface GridProps {
+  currentColor: Color;
+  item: Color;
+  onClick: (color: Color) => void;
+  hue: number;
+  saturation: number;
+  light: number;
+}
+
+const Grid: React.FC<GridProps> = (props) => {
+  useEffect(() => {
+    console.log(props.item, props.hue, props.saturation, props.light);
+  }, [props.hue, props.saturation, props.light]);
+  const isCurrentColor =
+    props.hue === props.currentColor.hue &&
+    props.item.saturation === props.currentColor.saturation &&
+    props.item.light === props.currentColor.light;
+  return (
+    <div
+      onClick={() =>
+        props.onClick({
+          hue: props.hue,
+          saturation: props.item.saturation,
+          light: props.item.light,
+        })
+      }
+      style={{
+        borderColor: `${isCurrentColor ? "black" : ""}`,
+        backgroundColor: `hsl(${props.hue},${props.item.saturation}%,${props.item.light}%) `,
+      }}
+      className="w-5 h-5 cursor-pointer border-2"
+    />
   );
 };
