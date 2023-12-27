@@ -1,7 +1,8 @@
 "use client";
 
-import { Dispatch, SetStateAction, useEffect, useMemo, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { useGridsLogic } from "./hooks/form";
+import { Counter } from "./Counter";
 
 export type Color = {
   hue: number;
@@ -71,6 +72,7 @@ const modes = ["HSL", "RGB", "HexCode"];
 export const InputColor = () => {
   const [currentColor, setCurrentColor] = useState<Color>(initialColor);
   const [mode, setMode] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   const [hsl, setHsl] = useState<Color>(initialColor);
   const [rgb, setRgb] = useState<RgbColor>(initialRgbColor);
   const values = [
@@ -79,9 +81,10 @@ export const InputColor = () => {
   ];
 
   return (
-    <div>
+    <div className="relative">
       <input type="color" />
       <div
+        onClick={() => setIsOpen(!isOpen)}
         className="h-10 flex rounded-md"
         style={{
           backgroundColor: `hsl(${currentColor.hue},${currentColor.saturation}%,${currentColor.light}%) `,
@@ -89,39 +92,41 @@ export const InputColor = () => {
       >
         {currentColor.hue}
       </div>
-      <div className="flex flex-col p-1 bg-white rounded-md">
-        <GenerateGrids
-          currentColor={currentColor}
-          cols={15}
-          hue={hsl.hue}
-          saturation={hsl.saturation}
-          light={hsl.light}
-          onClick={(color: Color) => setCurrentColor(color)}
-        />
-        <div className="w-full justify-between flex">
-          <button
-            onClick={() => setMode((prev) => (prev === 0 ? 2 : prev - 1))}
-          >
-            prev
-          </button>
-          <h1>{modes[mode]}</h1>
-          <button
-            onClick={() => setMode((prev) => (prev === 2 ? 0 : prev + 1))}
-          >
-            next
-          </button>
+      {isOpen ? (
+        <div className="flex absolute mt-2 flex-col p-1 bg-white rounded-md">
+          <GenerateGrids
+            currentColor={currentColor}
+            cols={15}
+            hue={hsl.hue}
+            saturation={hsl.saturation}
+            light={hsl.light}
+            onClick={(color: Color) => setCurrentColor(color)}
+          />
+          <div className="w-full justify-between flex">
+            <button
+              onClick={() => setMode((prev) => (prev === 0 ? 2 : prev - 1))}
+            >
+              prev
+            </button>
+            <h1>{modes[mode]}</h1>
+            <button
+              onClick={() => setMode((prev) => (prev === 2 ? 0 : prev + 1))}
+            >
+              next
+            </button>
+          </div>
+          <div className="">
+            {values[mode].inputs.map((item) => (
+              <SliderInput
+                key={item.title}
+                {...item}
+                value={values[mode].value}
+                setterFunction={values[mode].setterFunction as any}
+              />
+            ))}
+          </div>
         </div>
-        <div className="">
-          {values[mode].inputs.map((item) => (
-            <SliderInput
-              key={item.title}
-              {...item}
-              value={values[mode].value}
-              setterFunction={values[mode].setterFunction as any}
-            />
-          ))}
-        </div>
-      </div>
+      ) : null}
     </div>
   );
 };
@@ -211,6 +216,17 @@ const SliderInput: React.FC<SliderInputProps> = (props) => {
             }))
           }
           className="w-16 focus:outline-none bg-gray-500 p-1 rounded-md"
+        />
+        <Counter
+          min={parseInt(props.min)}
+          max={parseInt(props.max)}
+          value={props.value[props.name]}
+          onChange={(value) =>
+            props.setterFunction((prev) => ({
+              ...prev,
+              [props.name]: value,
+            }))
+          }
         />
       </div>
     </div>
