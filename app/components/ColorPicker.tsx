@@ -52,6 +52,26 @@ export const ColorPicker = () => {
               setterFunction={setCurrentColor}
             />
           </div>
+          <div className="">
+            <SliderInput
+              title="saturation"
+              name="saturation"
+              min="0"
+              max="100"
+              value={currentColor}
+              setterFunction={setCurrentColor}
+            />
+          </div>
+          <div className="">
+            <SliderInput
+              title="light"
+              name="light"
+              min="0"
+              max="100"
+              value={currentColor}
+              setterFunction={setCurrentColor}
+            />
+          </div>
         </div>
       ) : null}
     </div>
