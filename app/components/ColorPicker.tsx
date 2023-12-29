@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { useGridsLogic } from "./hooks/form";
 import { Counter } from "./Counter";
 
@@ -35,11 +35,8 @@ export const ColorPicker = () => {
       {isOpen ? (
         <div className="flex absolute mt-2 flex-col p-1 bg-white rounded-md">
           <GenerateGrids
+            cols={5}
             currentColor={currentColor}
-            cols={15}
-            hue={currentColor.hue}
-            saturation={currentColor.saturation}
-            light={currentColor.light}
             onClick={(color: Color) => setCurrentColor(color)}
           />
           <div className="">
@@ -79,16 +76,13 @@ export const ColorPicker = () => {
 };
 const GenerateGrids = (props: {
   cols: number;
-  hue: number;
-  saturation: number;
-  light: number;
-  onClick: (color: Color) => void;
   currentColor: Color;
+  onClick: (color: Color) => void;
 }) => {
   const grids = useGridsLogic({
     cols: props.cols,
-    saturation: props.saturation,
-    light: props.light,
+    saturation: props.currentColor.saturation,
+    light: props.currentColor.light,
   });
 
   return (
@@ -97,11 +91,8 @@ const GenerateGrids = (props: {
         <div key={i} className="flex flex-col">
           {grid.map((item, k) => (
             <Grid
-              saturation={props.saturation}
-              light={props.light}
-              hue={props.hue}
-              key={k}
               currentColor={props.currentColor}
+              key={k}
               item={item}
               onClick={props.onClick}
             />
@@ -169,31 +160,25 @@ const SliderInput: React.FC<SliderInputProps> = (props) => {
 };
 
 interface GridProps {
-  currentColor: Color;
   item: Color;
   onClick: (color: Color) => void;
-  hue: number;
-  saturation: number;
-  light: number;
+  currentColor: Color;
 }
 
 const Grid: React.FC<GridProps> = (props) => {
+  console.log("each grid", props.item, props.currentColor);
   const isCurrentColor =
-    props.hue === props.currentColor.hue &&
-    props.item.saturation === props.currentColor.saturation &&
-    props.item.light === props.currentColor.light;
+    props.item.light === props.currentColor.light &&
+    props.item.saturation === props.currentColor.saturation;
+
   return (
     <div
-      onClick={() =>
-        props.onClick({
-          hue: props.hue,
-          saturation: props.item.saturation,
-          light: props.item.light,
-        })
-      }
+      onClick={() => {
+        console.log(props.item, props.currentColor);
+      }}
       style={{
-        borderColor: `${isCurrentColor ? "black" : ""}`,
-        backgroundColor: `hsl(${props.hue},${props.item.saturation}%,${props.item.light}%) `,
+        borderColor: isCurrentColor ? "black" : "",
+        backgroundColor: `hsl(${props.currentColor.hue},${props.item.saturation}%,${props.item.light}%) `,
       }}
       className="w-5 h-5 cursor-pointer border-2"
     />
