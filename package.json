@@ -16,6 +16,8 @@
     "react-dom": "^18",
     "react-icons": "^4.12.0",
     "react-query": "^3.39.3",
+    "tailwindcss-language-server": "^0.0.1",
+    "typescript-language-server": "^4.2.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
