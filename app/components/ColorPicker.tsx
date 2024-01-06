@@ -8,18 +8,25 @@ export type Color = {
   lum: number;
 };
 
-export const ColorPicker = () => {
+interface ColorPickerProps {
+  setSelectedColor: (color: string) => void;
+  selectedColor: string;
+}
+
+export const ColorPicker: React.FC<ColorPickerProps> = ({
+  setSelectedColor,
+  selectedColor,
+}) => {
   const [hue, setHue] = useState(0);
   const [sat, setSat] = useState(0);
   const [lum, setLum] = useState(0);
-  const [selectedColor, setSelectedColor] = useState("hsl(0,0%,0%)");
 
   return (
     <div className="p-5 bg-neutral-800 flex flex-col gap-3 rounded-md">
       <GenerateGrids
         selectedColor={selectedColor}
         cols={15}
-        setSelectedColor={setSelectedColor}
+        setSelectedColor={(color) => setSelectedColor(color)}
         hue={hue}
         sat={sat}
         lum={lum}
@@ -40,7 +47,7 @@ interface GenerateGridsProps {
   hue: number;
   sat: number;
   lum: number;
-  setSelectedColor: Dispatch<SetStateAction<string>>;
+  setSelectedColor: (color: string) => void;
   cols: number;
   selectedColor: string;
 }
