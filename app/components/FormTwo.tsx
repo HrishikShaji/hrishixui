@@ -3,6 +3,7 @@
 import { FormEvent, useState } from "react";
 import { InputDate } from "./InputDate";
 import { format } from "date-fns";
+import { InputColor } from "./InputColor";
 
 export const FormTwo = () => {
   const [dob, setDob] = useState<Date>(new Date());
@@ -33,11 +34,7 @@ export const FormTwo = () => {
       onSubmit={handleSubmit}
       className="bg-neutral-500 rounded-md p-5 grid grid-cols-5  gap-5"
     >
-      <InputDate
-        reset={reset}
-        onChange={(value: Date) => setDob(value)}
-        date={dob}
-      />
+      <InputColor />
       <button type="submit" className="p-1 rounded-md bg-white text-black">
         Submit
       </button>
