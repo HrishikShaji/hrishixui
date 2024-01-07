@@ -6,9 +6,10 @@ import { format } from "date-fns";
 import { InputColor } from "./InputColor";
 
 export const FormTwo = () => {
+	const initialColor = "hsl(0,0%,0%)";
 	const [dob, setDob] = useState<Date>(new Date());
 	const [reset, setReset] = useState(false);
-	const [color, setColor] = useState("hsl(0,0%,0%)");
+	const [color, setColor] = useState(initialColor);
 
 	const handleSubmit = async (e: FormEvent) => {
 		e.preventDefault();
@@ -27,6 +28,7 @@ export const FormTwo = () => {
 		} finally {
 			setDob(new Date());
 			setReset(true);
+			setColor(initialColor);
 		}
 	};
 
