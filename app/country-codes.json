@@ -10,9 +10,7 @@
       "alpha-3": "AND",
       "numeric": "020"
     },
-    "phone": [
-      "+376"
-    ],
+    "phone": ["+376"],
     "emoji": "🇦🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AD.svg",
     "phoneLength": 6
@@ -28,9 +26,7 @@
       "alpha-3": "ARE",
       "numeric": "784"
     },
-    "phone": [
-      "+971"
-    ],
+    "phone": ["+971"],
     "emoji": "🇦🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AE.svg",
     "phoneLength": 9
@@ -46,9 +42,7 @@
       "alpha-3": "AFG",
       "numeric": "004"
     },
-    "phone": [
-      "+93"
-    ],
+    "phone": ["+93"],
     "emoji": "🇦🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AF.svg",
     "phoneLength": 9
@@ -64,9 +58,7 @@
       "alpha-3": "ATG",
       "numeric": "028"
     },
-    "phone": [
-      "+1-268"
-    ],
+    "phone": ["+1-268"],
     "emoji": "🇦🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AG.svg",
     "phoneLength": 10
@@ -82,9 +74,7 @@
       "alpha-3": "AIA",
       "numeric": "660"
     },
-    "phone": [
-      "+1-264"
-    ],
+    "phone": ["+1-264"],
     "emoji": "🇦🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AI.svg",
     "phoneLength": 10
@@ -100,9 +90,7 @@
       "alpha-3": "ALB",
       "numeric": "008"
     },
-    "phone": [
-      "+355"
-    ],
+    "phone": ["+355"],
     "emoji": "🇦🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AL.svg",
     "phoneLength": 9
@@ -118,9 +106,7 @@
       "alpha-3": "ARM",
       "numeric": "051"
     },
-    "phone": [
-      "+374"
-    ],
+    "phone": ["+374"],
     "emoji": "🇦🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AM.svg",
     "phoneLength": 6
@@ -136,9 +122,7 @@
       "alpha-3": "AGO",
       "numeric": "024"
     },
-    "phone": [
-      "+244"
-    ],
+    "phone": ["+244"],
     "emoji": "🇦🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AO.svg",
     "phoneLength": 9
@@ -163,9 +147,7 @@
       "alpha-3": "ATA",
       "numeric": "010"
     },
-    "phone": [
-      "+"
-    ],
+    "phone": ["+"],
     "emoji": "🇦🇶",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AQ.svg",
     "phoneLength": 6
@@ -192,16 +174,10 @@
       "alpha-3": "ARG",
       "numeric": "032"
     },
-    "phone": [
-      "+54"
-    ],
+    "phone": ["+54"],
     "emoji": "🇦🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AR.svg",
-    "phoneLength": [
-      6,
-      7,
-      8
-    ]
+    "phoneLength": [6, 7, 8]
   },
   {
     "name": "American Samoa",
@@ -214,9 +190,7 @@
       "alpha-3": "ASM",
       "numeric": "016"
     },
-    "phone": [
-      "+1-684"
-    ],
+    "phone": ["+1-684"],
     "emoji": "🇦🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AS.svg",
     "phoneLength": 10
@@ -232,15 +206,10 @@
       "alpha-3": "AUT",
       "numeric": "040"
     },
-    "phone": [
-      "+43"
-    ],
+    "phone": ["+43"],
     "emoji": "🇦🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AT.svg",
-    "phoneLength": [
-      10,
-      11
-    ]
+    "phoneLength": [10, 11]
   },
   {
     "name": "Australia",
@@ -264,9 +233,7 @@
       "alpha-3": "AUS",
       "numeric": "036"
     },
-    "phone": [
-      "+61"
-    ],
+    "phone": ["+61"],
     "emoji": "🇦🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AU.svg",
     "phoneLength": 9
@@ -282,9 +249,7 @@
       "alpha-3": "ABW",
       "numeric": "533"
     },
-    "phone": [
-      "+297"
-    ],
+    "phone": ["+297"],
     "emoji": "🇦🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AW.svg",
     "phoneLength": 7
@@ -300,9 +265,7 @@
       "alpha-3": "ALA",
       "numeric": "248"
     },
-    "phone": [
-      "+358-18"
-    ],
+    "phone": ["+358-18"],
     "emoji": "🇦🇽",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AX.svg"
   },
@@ -317,9 +280,7 @@
       "alpha-3": "AZE",
       "numeric": "031"
     },
-    "phone": [
-      "+994"
-    ],
+    "phone": ["+994"],
     "emoji": "🇦🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AZ.svg",
     "phoneLength": 9
@@ -335,9 +296,7 @@
       "alpha-3": "BIH",
       "numeric": "070"
     },
-    "phone": [
-      "+387"
-    ],
+    "phone": ["+387"],
     "emoji": "🇧🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BA.svg",
     "phoneLength": 8
@@ -353,9 +312,7 @@
       "alpha-3": "BRB",
       "numeric": "052"
     },
-    "phone": [
-      "+1-246"
-    ],
+    "phone": ["+1-246"],
     "emoji": "🇧🇧",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BB.svg",
     "phoneLength": 10
@@ -371,9 +328,7 @@
       "alpha-3": "BGD",
       "numeric": "050"
     },
-    "phone": [
-      "+880"
-    ],
+    "phone": ["+880"],
     "emoji": "🇧🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BD.svg",
     "phoneLength": 10
@@ -389,9 +344,7 @@
       "alpha-3": "BEL",
       "numeric": "056"
     },
-    "phone": [
-      "+32"
-    ],
+    "phone": ["+32"],
     "emoji": "🇧🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BE.svg",
     "phoneLength": 9
@@ -407,9 +360,7 @@
       "alpha-3": "BFA",
       "numeric": "854"
     },
-    "phone": [
-      "+226"
-    ],
+    "phone": ["+226"],
     "emoji": "🇧🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BF.svg",
     "phoneLength": 8
@@ -425,9 +376,7 @@
       "alpha-3": "BGR",
       "numeric": "100"
     },
-    "phone": [
-      "+359"
-    ],
+    "phone": ["+359"],
     "emoji": "🇧🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BG.svg",
     "phoneLength": 9
@@ -443,9 +392,7 @@
       "alpha-3": "BHR",
       "numeric": "048"
     },
-    "phone": [
-      "+973"
-    ],
+    "phone": ["+973"],
     "emoji": "🇧🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BH.svg",
     "phoneLength": 8
@@ -461,9 +408,7 @@
       "alpha-3": "BDI",
       "numeric": "108"
     },
-    "phone": [
-      "+257"
-    ],
+    "phone": ["+257"],
     "emoji": "🇧🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BI.svg",
     "phoneLength": 8
@@ -479,9 +424,7 @@
       "alpha-3": "BEN",
       "numeric": "204"
     },
-    "phone": [
-      "+229"
-    ],
+    "phone": ["+229"],
     "emoji": "🇧🇯",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BJ.svg",
     "phoneLength": 8
@@ -497,9 +440,7 @@
       "alpha-3": "BLM",
       "numeric": "652"
     },
-    "phone": [
-      "+590"
-    ],
+    "phone": ["+590"],
     "emoji": "🇧🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BL.svg",
     "phoneLength": 9
@@ -515,9 +456,7 @@
       "alpha-3": "BMU",
       "numeric": "060"
     },
-    "phone": [
-      "+1-441"
-    ],
+    "phone": ["+1-441"],
     "emoji": "🇧🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BM.svg",
     "phoneLength": 10
@@ -533,9 +472,7 @@
       "alpha-3": "BRN",
       "numeric": "096"
     },
-    "phone": [
-      "+673"
-    ],
+    "phone": ["+673"],
     "emoji": "🇧🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BN.svg",
     "phoneLength": 7
@@ -551,9 +488,7 @@
       "alpha-3": "BOL",
       "numeric": "068"
     },
-    "phone": [
-      "+591"
-    ],
+    "phone": ["+591"],
     "emoji": "🇧🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BO.svg",
     "phoneLength": 9
@@ -584,9 +519,7 @@
       "alpha-3": "BRA",
       "numeric": "076"
     },
-    "phone": [
-      "+55"
-    ],
+    "phone": ["+55"],
     "emoji": "🇧🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BR.svg",
     "phoneLength": 11
@@ -602,9 +535,7 @@
       "alpha-3": "BHS",
       "numeric": "044"
     },
-    "phone": [
-      "+1-242"
-    ],
+    "phone": ["+1-242"],
     "emoji": "🇧🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BS.svg",
     "phoneLength": 10
@@ -620,15 +551,10 @@
       "alpha-3": "BTN",
       "numeric": "064"
     },
-    "phone": [
-      "+975"
-    ],
+    "phone": ["+975"],
     "emoji": "🇧🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BT.svg",
     "phoneLength": 7
-  },
-  {
-    "phoneLength": 10
   },
   {
     "name": "Botswana",
@@ -641,9 +567,7 @@
       "alpha-3": "BWA",
       "numeric": "072"
     },
-    "phone": [
-      "+267"
-    ],
+    "phone": ["+267"],
     "emoji": "🇧🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BW.svg",
     "phoneLength": 7
@@ -659,9 +583,7 @@
       "alpha-3": "BLR",
       "numeric": "112"
     },
-    "phone": [
-      "+375"
-    ],
+    "phone": ["+375"],
     "emoji": "🇧🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BY.svg",
     "phoneLength": 9
@@ -677,9 +599,7 @@
       "alpha-3": "BLZ",
       "numeric": "084"
     },
-    "phone": [
-      "+501"
-    ],
+    "phone": ["+501"],
     "emoji": "🇧🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BZ.svg",
     "phoneLength": 7
@@ -717,9 +637,7 @@
       "alpha-3": "CAN",
       "numeric": "124"
     },
-    "phone": [
-      "+1"
-    ],
+    "phone": ["+1"],
     "emoji": "🇨🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CA.svg",
     "phoneLength": 10
@@ -735,9 +653,7 @@
       "alpha-3": "CCK",
       "numeric": "166"
     },
-    "phone": [
-      "+61"
-    ],
+    "phone": ["+61"],
     "emoji": "🇨🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CC.svg",
     "phoneLength": 10
@@ -754,9 +670,7 @@
       "alpha-3": "COD",
       "numeric": "180"
     },
-    "phone": [
-      "+243"
-    ],
+    "phone": ["+243"],
     "emoji": "🇨🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CD.svg",
     "phoneLength": 7
@@ -772,9 +686,7 @@
       "alpha-3": "CAF",
       "numeric": "140"
     },
-    "phone": [
-      "+236"
-    ],
+    "phone": ["+236"],
     "emoji": "🇨🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CF.svg",
     "phoneLength": 8
@@ -790,9 +702,7 @@
       "alpha-3": "COG",
       "numeric": "178"
     },
-    "phone": [
-      "+242"
-    ],
+    "phone": ["+242"],
     "emoji": "🇨🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CG.svg",
     "phoneLength": 9
@@ -808,9 +718,7 @@
       "alpha-3": "CHE",
       "numeric": "756"
     },
-    "phone": [
-      "+41"
-    ],
+    "phone": ["+41"],
     "emoji": "🇨🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CH.svg",
     "phoneLength": 9
@@ -826,9 +734,7 @@
       "alpha-3": "CIV",
       "numeric": "384"
     },
-    "phone": [
-      "+225"
-    ],
+    "phone": ["+225"],
     "emoji": "🇨🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CI.svg",
     "phoneLength": 8
@@ -844,9 +750,7 @@
       "alpha-3": "COK",
       "numeric": "184"
     },
-    "phone": [
-      "+682"
-    ],
+    "phone": ["+682"],
     "emoji": "🇨🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CK.svg",
     "phoneLength": 5
@@ -864,9 +768,7 @@
       "alpha-3": "CHL",
       "numeric": "152"
     },
-    "phone": [
-      "+56"
-    ],
+    "phone": ["+56"],
     "emoji": "🇨🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CL.svg",
     "phoneLength": 9
@@ -882,9 +784,7 @@
       "alpha-3": "CMR",
       "numeric": "120"
     },
-    "phone": [
-      "+237"
-    ],
+    "phone": ["+237"],
     "emoji": "🇨🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CM.svg",
     "phoneLength": 9
@@ -901,9 +801,7 @@
       "alpha-3": "CHN",
       "numeric": "156"
     },
-    "phone": [
-      "+86"
-    ],
+    "phone": ["+86"],
     "emoji": "🇨🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CN.svg",
     "phoneLength": 11
@@ -919,9 +817,7 @@
       "alpha-3": "COL",
       "numeric": "170"
     },
-    "phone": [
-      "+57"
-    ],
+    "phone": ["+57"],
     "emoji": "🇨🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CO.svg",
     "phoneLength": 10
@@ -937,9 +833,7 @@
       "alpha-3": "CRI",
       "numeric": "188"
     },
-    "phone": [
-      "+506"
-    ],
+    "phone": ["+506"],
     "emoji": "🇨🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CR.svg",
     "phoneLength": 8
@@ -955,9 +849,7 @@
       "alpha-3": "CUB",
       "numeric": "192"
     },
-    "phone": [
-      "+53"
-    ],
+    "phone": ["+53"],
     "emoji": "🇨🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CU.svg",
     "phoneLength": 8
@@ -973,9 +865,7 @@
       "alpha-3": "CPV",
       "numeric": "132"
     },
-    "phone": [
-      "+238"
-    ],
+    "phone": ["+238"],
     "emoji": "🇨🇻",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CV.svg",
     "phoneLength": 7
@@ -991,9 +881,7 @@
       "alpha-3": "CUW",
       "numeric": "531"
     },
-    "phone": [
-      "+599"
-    ],
+    "phone": ["+599"],
     "emoji": "🇨🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CW.svg",
     "phoneLength": 7
@@ -1009,9 +897,7 @@
       "alpha-3": "CXR",
       "numeric": "162"
     },
-    "phone": [
-      "+61"
-    ],
+    "phone": ["+61"],
     "emoji": "🇨🇽",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CX.svg",
     "phoneLength": 9
@@ -1028,9 +914,7 @@
       "alpha-3": "CYP",
       "numeric": "196"
     },
-    "phone": [
-      "+357"
-    ],
+    "phone": ["+357"],
     "emoji": "🇨🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CY.svg",
     "phoneLength": 8
@@ -1046,9 +930,7 @@
       "alpha-3": "CZE",
       "numeric": "203"
     },
-    "phone": [
-      "+420"
-    ],
+    "phone": ["+420"],
     "emoji": "🇨🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CZ.svg",
     "phoneLength": 9
@@ -1065,9 +947,7 @@
       "alpha-3": "DEU",
       "numeric": "276"
     },
-    "phone": [
-      "+49"
-    ],
+    "phone": ["+49"],
     "emoji": "🇩🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DE.svg",
     "phoneLength": 10
@@ -1083,9 +963,7 @@
       "alpha-3": "DJI",
       "numeric": "262"
     },
-    "phone": [
-      "+253"
-    ],
+    "phone": ["+253"],
     "emoji": "🇩🇯",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DJ.svg",
     "phoneLength": 10
@@ -1101,9 +979,7 @@
       "alpha-3": "DNK",
       "numeric": "208"
     },
-    "phone": [
-      "+45"
-    ],
+    "phone": ["+45"],
     "emoji": "🇩🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DK.svg",
     "phoneLength": 8
@@ -1119,9 +995,7 @@
       "alpha-3": "DMA",
       "numeric": "212"
     },
-    "phone": [
-      "+1-767"
-    ],
+    "phone": ["+1-767"],
     "emoji": "🇩🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DM.svg",
     "phoneLength": 10
@@ -1137,10 +1011,7 @@
       "alpha-3": "DOM",
       "numeric": "214"
     },
-    "phone": [
-      "+1-809",
-      "+1-829"
-    ],
+    "phone": ["+1-809", "+1-829"],
     "emoji": "🇩🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DO.svg",
     "phoneLength": 10
@@ -1156,9 +1027,7 @@
       "alpha-3": "DZA",
       "numeric": "012"
     },
-    "phone": [
-      "+213"
-    ],
+    "phone": ["+213"],
     "emoji": "🇩🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DZ.svg",
     "phoneLength": 9
@@ -1175,9 +1044,7 @@
       "alpha-3": "ECU",
       "numeric": "218"
     },
-    "phone": [
-      "+593"
-    ],
+    "phone": ["+593"],
     "emoji": "🇪🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EC.svg",
     "phoneLength": 9
@@ -1193,9 +1060,7 @@
       "alpha-3": "EST",
       "numeric": "233"
     },
-    "phone": [
-      "+372"
-    ],
+    "phone": ["+372"],
     "emoji": "🇪🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EE.svg",
     "phoneLength": 8
@@ -1211,15 +1076,10 @@
       "alpha-3": "EGY",
       "numeric": "818"
     },
-    "phone": [
-      "+20"
-    ],
+    "phone": ["+20"],
     "emoji": "🇪🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EG.svg",
     "phoneLength": 10
-  },
-  {
-    "phoneLength": 9
   },
   {
     "name": "Eritrea",
@@ -1232,9 +1092,7 @@
       "alpha-3": "ERI",
       "numeric": "232"
     },
-    "phone": [
-      "+291"
-    ],
+    "phone": ["+291"],
     "emoji": "🇪🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ER.svg",
     "phoneLength": 7
@@ -1252,9 +1110,7 @@
       "alpha-3": "ESP",
       "numeric": "724"
     },
-    "phone": [
-      "+34"
-    ],
+    "phone": ["+34"],
     "emoji": "🇪🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ES.svg",
     "phoneLength": 9
@@ -1270,9 +1126,7 @@
       "alpha-3": "ETH",
       "numeric": "231"
     },
-    "phone": [
-      "+251"
-    ],
+    "phone": ["+251"],
     "emoji": "🇪🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ET.svg",
     "phoneLength": 9
@@ -1288,9 +1142,7 @@
       "alpha-3": "FIN",
       "numeric": "246"
     },
-    "phone": [
-      "+358"
-    ],
+    "phone": ["+358"],
     "emoji": "🇫🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FI.svg"
   },
@@ -1305,9 +1157,7 @@
       "alpha-3": "FJI",
       "numeric": "242"
     },
-    "phone": [
-      "+679"
-    ],
+    "phone": ["+679"],
     "emoji": "🇫🇯",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FJ.svg",
     "phoneLength": 7
@@ -1323,9 +1173,7 @@
       "alpha-3": "FLK",
       "numeric": "238"
     },
-    "phone": [
-      "+500"
-    ],
+    "phone": ["+500"],
     "emoji": "🇫🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FK.svg",
     "phoneLength": 5
@@ -1343,9 +1191,7 @@
       "alpha-3": "FSM",
       "numeric": "583"
     },
-    "phone": [
-      "+691"
-    ],
+    "phone": ["+691"],
     "emoji": "🇫🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FM.svg",
     "phoneLength": 7
@@ -1361,9 +1207,7 @@
       "alpha-3": "FRO",
       "numeric": "234"
     },
-    "phone": [
-      "+298"
-    ],
+    "phone": ["+298"],
     "emoji": "🇫🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FO.svg",
     "phoneLength": 5
@@ -1379,9 +1223,7 @@
       "alpha-3": "FRA",
       "numeric": "250"
     },
-    "phone": [
-      "+33"
-    ],
+    "phone": ["+33"],
     "emoji": "🇫🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FR.svg",
     "phoneLength": 9
@@ -1397,9 +1239,7 @@
       "alpha-3": "GAB",
       "numeric": "266"
     },
-    "phone": [
-      "+241"
-    ],
+    "phone": ["+241"],
     "emoji": "🇬🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GA.svg",
     "phoneLength": 7
@@ -1415,9 +1255,7 @@
       "alpha-3": "GBR",
       "numeric": "826"
     },
-    "phone": [
-      "+44"
-    ],
+    "phone": ["+44"],
     "emoji": "🇬🇧",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GB.svg",
     "phoneLength": 10
@@ -1433,9 +1271,7 @@
       "alpha-3": "GRD",
       "numeric": "308"
     },
-    "phone": [
-      "+1-473"
-    ],
+    "phone": ["+1-473"],
     "emoji": "🇬🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GD.svg",
     "phoneLength": 10
@@ -1451,9 +1287,7 @@
       "alpha-3": "GEO",
       "numeric": "268"
     },
-    "phone": [
-      "+995"
-    ],
+    "phone": ["+995"],
     "emoji": "🇬🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GE.svg",
     "phoneLength": 9
@@ -1469,9 +1303,7 @@
       "alpha-3": "GUF",
       "numeric": "254"
     },
-    "phone": [
-      "+594"
-    ],
+    "phone": ["+594"],
     "emoji": "🇬🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GF.svg",
     "phoneLength": 9
@@ -1487,9 +1319,7 @@
       "alpha-3": "GGY",
       "numeric": "831"
     },
-    "phone": [
-      "+44-1481"
-    ],
+    "phone": ["+44-1481"],
     "emoji": "🇬🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GG.svg",
     "phoneLength": 10
@@ -1505,9 +1335,7 @@
       "alpha-3": "GHA",
       "numeric": "288"
     },
-    "phone": [
-      "+233"
-    ],
+    "phone": ["+233"],
     "emoji": "🇬🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GH.svg",
     "phoneLength": 9
@@ -1523,9 +1351,7 @@
       "alpha-3": "GIB",
       "numeric": "292"
     },
-    "phone": [
-      "+350"
-    ],
+    "phone": ["+350"],
     "emoji": "🇬🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GI.svg",
     "phoneLength": 8
@@ -1544,9 +1370,7 @@
       "alpha-3": "GRL",
       "numeric": "304"
     },
-    "phone": [
-      "+299"
-    ],
+    "phone": ["+299"],
     "emoji": "🇬🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GL.svg",
     "phoneLength": 6
@@ -1562,9 +1386,7 @@
       "alpha-3": "GMB",
       "numeric": "270"
     },
-    "phone": [
-      "+220"
-    ],
+    "phone": ["+220"],
     "emoji": "🇬🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GM.svg",
     "phoneLength": 7
@@ -1580,9 +1402,7 @@
       "alpha-3": "GIN",
       "numeric": "324"
     },
-    "phone": [
-      "+224"
-    ],
+    "phone": ["+224"],
     "emoji": "🇬🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GN.svg",
     "phoneLength": 9
@@ -1598,9 +1418,7 @@
       "alpha-3": "GLP",
       "numeric": "312"
     },
-    "phone": [
-      "+590"
-    ],
+    "phone": ["+590"],
     "emoji": "🇬🇵",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GP.svg",
     "phoneLength": 9
@@ -1616,9 +1434,7 @@
       "alpha-3": "GNQ",
       "numeric": "226"
     },
-    "phone": [
-      "+240"
-    ],
+    "phone": ["+240"],
     "emoji": "🇬🇶",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GQ.svg",
     "phoneLength": 9
@@ -1634,9 +1450,7 @@
       "alpha-3": "GRC",
       "numeric": "300"
     },
-    "phone": [
-      "+30"
-    ],
+    "phone": ["+30"],
     "emoji": "🇬🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GR.svg",
     "phoneLength": 10
@@ -1652,9 +1466,7 @@
       "alpha-3": "SGS",
       "numeric": "239"
     },
-    "phone": [
-      "+"
-    ],
+    "phone": ["+"],
     "emoji": "🇬🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GS.svg",
     "phoneLength": 5
@@ -1670,9 +1482,7 @@
       "alpha-3": "GTM",
       "numeric": "320"
     },
-    "phone": [
-      "+502"
-    ],
+    "phone": ["+502"],
     "emoji": "🇬🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GT.svg",
     "phoneLength": 8
@@ -1688,9 +1498,7 @@
       "alpha-3": "GUM",
       "numeric": "316"
     },
-    "phone": [
-      "+1-671"
-    ],
+    "phone": ["+1-671"],
     "emoji": "🇬🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GU.svg",
     "phoneLength": 10
@@ -1706,9 +1514,7 @@
       "alpha-3": "GNB",
       "numeric": "624"
     },
-    "phone": [
-      "+245"
-    ],
+    "phone": ["+245"],
     "emoji": "🇬🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GW.svg",
     "phoneLength": 9
@@ -1724,9 +1530,7 @@
       "alpha-3": "GUY",
       "numeric": "328"
     },
-    "phone": [
-      "+592"
-    ],
+    "phone": ["+592"],
     "emoji": "🇬🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GY.svg",
     "phoneLength": 7
@@ -1742,15 +1546,10 @@
       "alpha-3": "HKG",
       "numeric": "344"
     },
-    "phone": [
-      "+852"
-    ],
+    "phone": ["+852"],
     "emoji": "🇭🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HK.svg",
     "phoneLength": 8
-  },
-  {
-    "phoneLength": 10
   },
   {
     "name": "Honduras",
@@ -1763,9 +1562,7 @@
       "alpha-3": "HND",
       "numeric": "340"
     },
-    "phone": [
-      "+504"
-    ],
+    "phone": ["+504"],
     "emoji": "🇭🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HN.svg",
     "phoneLength": 8
@@ -1781,9 +1578,7 @@
       "alpha-3": "HRV",
       "numeric": "191"
     },
-    "phone": [
-      "+385"
-    ],
+    "phone": ["+385"],
     "emoji": "🇭🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HR.svg",
     "phoneLength": 9
@@ -1799,9 +1594,7 @@
       "alpha-3": "HTI",
       "numeric": "332"
     },
-    "phone": [
-      "+509"
-    ],
+    "phone": ["+509"],
     "emoji": "🇭🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HT.svg",
     "phoneLength": 8
@@ -1817,9 +1610,7 @@
       "alpha-3": "HUN",
       "numeric": "348"
     },
-    "phone": [
-      "+36"
-    ],
+    "phone": ["+36"],
     "emoji": "🇭🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HU.svg",
     "phoneLength": 9
@@ -1838,9 +1629,7 @@
       "alpha-3": "IDN",
       "numeric": "360"
     },
-    "phone": [
-      "+62"
-    ],
+    "phone": ["+62"],
     "emoji": "🇮🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ID.svg",
     "phoneLength": 11
@@ -1856,9 +1645,7 @@
       "alpha-3": "IRL",
       "numeric": "372"
     },
-    "phone": [
-      "+353"
-    ],
+    "phone": ["+353"],
     "emoji": "🇮🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IE.svg",
     "phoneLength": 9
@@ -1874,9 +1661,7 @@
       "alpha-3": "ISR",
       "numeric": "376"
     },
-    "phone": [
-      "+972"
-    ],
+    "phone": ["+972"],
     "emoji": "🇮🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IL.svg",
     "phoneLength": 9
@@ -1892,9 +1677,7 @@
       "alpha-3": "IMN",
       "numeric": "833"
     },
-    "phone": [
-      "+44-1624"
-    ],
+    "phone": ["+44-1624"],
     "emoji": "🇮🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IM.svg",
     "phoneLength": 10
@@ -1910,9 +1693,7 @@
       "alpha-3": "IND",
       "numeric": "356"
     },
-    "phone": [
-      "+91"
-    ],
+    "phone": ["+91"],
     "emoji": "🇮🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IN.svg",
     "phoneLength": 10
@@ -1928,9 +1709,7 @@
       "alpha-3": "IOT",
       "numeric": "086"
     },
-    "phone": [
-      "+246"
-    ],
+    "phone": ["+246"],
     "emoji": "🇮🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IO.svg",
     "phoneLength": 7
@@ -1946,9 +1725,7 @@
       "alpha-3": "IRQ",
       "numeric": "368"
     },
-    "phone": [
-      "+964"
-    ],
+    "phone": ["+964"],
     "emoji": "🇮🇶",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IQ.svg",
     "phoneLength": 10
@@ -1964,9 +1741,7 @@
       "alpha-3": "IRN",
       "numeric": "364"
     },
-    "phone": [
-      "+98"
-    ],
+    "phone": ["+98"],
     "emoji": "🇮🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IR.svg",
     "phoneLength": 11
@@ -1982,9 +1757,7 @@
       "alpha-3": "ISL",
       "numeric": "352"
     },
-    "phone": [
-      "+354"
-    ],
+    "phone": ["+354"],
     "emoji": "🇮🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IS.svg",
     "phoneLength": 7
@@ -2000,9 +1773,7 @@
       "alpha-3": "ITA",
       "numeric": "380"
     },
-    "phone": [
-      "+39"
-    ],
+    "phone": ["+39"],
     "emoji": "🇮🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IT.svg",
     "phoneLength": 10
@@ -2018,9 +1789,7 @@
       "alpha-3": "JEY",
       "numeric": "832"
     },
-    "phone": [
-      "+44-1534"
-    ],
+    "phone": ["+44-1534"],
     "emoji": "🇯🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JE.svg",
     "phoneLength": 10
@@ -2036,9 +1805,7 @@
       "alpha-3": "JAM",
       "numeric": "388"
     },
-    "phone": [
-      "+1-876"
-    ],
+    "phone": ["+1-876"],
     "emoji": "🇯🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JM.svg",
     "phoneLength": 10
@@ -2054,15 +1821,10 @@
       "alpha-3": "JOR",
       "numeric": "400"
     },
-    "phone": [
-      "+962"
-    ],
+    "phone": ["+962"],
     "emoji": "🇯🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JO.svg",
-    "phoneLength": [
-      8,
-      9
-    ]
+    "phoneLength": [8, 9]
   },
   {
     "name": "Japan",
@@ -2075,9 +1837,7 @@
       "alpha-3": "JPN",
       "numeric": "392"
     },
-    "phone": [
-      "+81"
-    ],
+    "phone": ["+81"],
     "emoji": "🇯🇵",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JP.svg"
   },
@@ -2092,9 +1852,7 @@
       "alpha-3": "KEN",
       "numeric": "404"
     },
-    "phone": [
-      "+254"
-    ],
+    "phone": ["+254"],
     "emoji": "🇰🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KE.svg",
     "phoneLength": 10
@@ -2110,9 +1868,7 @@
       "alpha-3": "KGZ",
       "numeric": "417"
     },
-    "phone": [
-      "+996"
-    ],
+    "phone": ["+996"],
     "emoji": "🇰🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KG.svg",
     "phoneLength": 9
@@ -2128,9 +1884,7 @@
       "alpha-3": "KHM",
       "numeric": "116"
     },
-    "phone": [
-      "+855"
-    ],
+    "phone": ["+855"],
     "emoji": "🇰🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KH.svg",
     "phoneLength": 9
@@ -2148,9 +1902,7 @@
       "alpha-3": "KIR",
       "numeric": "296"
     },
-    "phone": [
-      "+686"
-    ],
+    "phone": ["+686"],
     "emoji": "🇰🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KI.svg",
     "phoneLength": 8
@@ -2166,9 +1918,7 @@
       "alpha-3": "COM",
       "numeric": "174"
     },
-    "phone": [
-      "+269"
-    ],
+    "phone": ["+269"],
     "emoji": "🇰🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KM.svg",
     "phoneLength": 7
@@ -2184,9 +1934,7 @@
       "alpha-3": "KNA",
       "numeric": "659"
     },
-    "phone": [
-      "+1-869"
-    ],
+    "phone": ["+1-869"],
     "emoji": "🇰🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KN.svg",
     "phoneLength": 10
@@ -2202,17 +1950,10 @@
       "alpha-3": "PRK",
       "numeric": "408"
     },
-    "phone": [
-      "+850"
-    ],
+    "phone": ["+850"],
     "emoji": "🇰🇵",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KP.svg",
-    "phoneLength": [
-      4,
-      6,
-      7,
-      13
-    ]
+    "phoneLength": [4, 6, 7, 13]
   },
   {
     "name": "Korea, Republic of",
@@ -2225,15 +1966,10 @@
       "alpha-3": "KOR",
       "numeric": "410"
     },
-    "phone": [
-      "+82"
-    ],
+    "phone": ["+82"],
     "emoji": "🇰🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KR.svg",
-    "phoneLength": [
-      7,
-      8
-    ]
+    "phoneLength": [7, 8]
   },
   {
     "name": "Kuwait",
@@ -2246,9 +1982,7 @@
       "alpha-3": "KWT",
       "numeric": "414"
     },
-    "phone": [
-      "+965"
-    ],
+    "phone": ["+965"],
     "emoji": "🇰🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KW.svg",
     "phoneLength": 8
@@ -2264,9 +1998,7 @@
       "alpha-3": "CYM",
       "numeric": "136"
     },
-    "phone": [
-      "+1-345"
-    ],
+    "phone": ["+1-345"],
     "emoji": "🇰🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KY.svg",
     "phoneLength": 7
@@ -2288,9 +2020,7 @@
       "alpha-3": "KAZ",
       "numeric": "398"
     },
-    "phone": [
-      "+7"
-    ],
+    "phone": ["+7"],
     "emoji": "🇰🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KZ.svg",
     "phoneLength": 10
@@ -2306,15 +2036,10 @@
       "alpha-3": "LAO",
       "numeric": "418"
     },
-    "phone": [
-      "+856"
-    ],
+    "phone": ["+856"],
     "emoji": "🇱🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LA.svg",
-    "phoneLength": [
-      8,
-      9
-    ]
+    "phoneLength": [8, 9]
   },
   {
     "name": "Lebanon",
@@ -2327,15 +2052,10 @@
       "alpha-3": "LBN",
       "numeric": "422"
     },
-    "phone": [
-      "+961"
-    ],
+    "phone": ["+961"],
     "emoji": "🇱🇧",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LB.svg",
-    "phoneLength": [
-      7,
-      8
-    ]
+    "phoneLength": [7, 8]
   },
   {
     "name": "Saint Lucia",
@@ -2348,9 +2068,7 @@
       "alpha-3": "LCA",
       "numeric": "662"
     },
-    "phone": [
-      "+1-758"
-    ],
+    "phone": ["+1-758"],
     "emoji": "🇱🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LC.svg",
     "phoneLength": 7
@@ -2366,9 +2084,7 @@
       "alpha-3": "LIE",
       "numeric": "438"
     },
-    "phone": [
-      "+423"
-    ],
+    "phone": ["+423"],
     "emoji": "🇱🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LI.svg",
     "phoneLength": 7
@@ -2384,9 +2100,7 @@
       "alpha-3": "LKA",
       "numeric": "144"
     },
-    "phone": [
-      "+94"
-    ],
+    "phone": ["+94"],
     "emoji": "🇱🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LK.svg",
     "phoneLength": 7
@@ -2402,15 +2116,10 @@
       "alpha-3": "LBR",
       "numeric": "430"
     },
-    "phone": [
-      "+231"
-    ],
+    "phone": ["+231"],
     "emoji": "🇱🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LR.svg",
-    "phoneLength": [
-      8,
-      9
-    ]
+    "phoneLength": [8, 9]
   },
   {
     "name": "Lesotho",
@@ -2423,9 +2132,7 @@
       "alpha-3": "LSO",
       "numeric": "426"
     },
-    "phone": [
-      "+266"
-    ],
+    "phone": ["+266"],
     "emoji": "🇱🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LS.svg",
     "phoneLength": 8
@@ -2441,9 +2148,7 @@
       "alpha-3": "LTU",
       "numeric": "440"
     },
-    "phone": [
-      "+370"
-    ],
+    "phone": ["+370"],
     "emoji": "🇱🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LT.svg",
     "phoneLength": 8
@@ -2459,9 +2164,7 @@
       "alpha-3": "LUX",
       "numeric": "442"
     },
-    "phone": [
-      "+352"
-    ],
+    "phone": ["+352"],
     "emoji": "🇱🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LU.svg",
     "phoneLength": 9
@@ -2477,9 +2180,7 @@
       "alpha-3": "LVA",
       "numeric": "428"
     },
-    "phone": [
-      "+371"
-    ],
+    "phone": ["+371"],
     "emoji": "🇱🇻",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LV.svg",
     "phoneLength": 8
@@ -2495,9 +2196,7 @@
       "alpha-3": "LBY",
       "numeric": "434"
     },
-    "phone": [
-      "+218"
-    ],
+    "phone": ["+218"],
     "emoji": "🇱🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LY.svg",
     "phoneLength": 10
@@ -2514,9 +2213,7 @@
       "alpha-3": "MAR",
       "numeric": "504"
     },
-    "phone": [
-      "+212"
-    ],
+    "phone": ["+212"],
     "emoji": "🇲🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MA.svg",
     "phoneLength": 9
@@ -2532,9 +2229,7 @@
       "alpha-3": "MCO",
       "numeric": "492"
     },
-    "phone": [
-      "+377"
-    ],
+    "phone": ["+377"],
     "emoji": "🇲🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MC.svg",
     "phoneLength": 8
@@ -2550,9 +2245,7 @@
       "alpha-3": "MDA",
       "numeric": "498"
     },
-    "phone": [
-      "+373"
-    ],
+    "phone": ["+373"],
     "emoji": "🇲🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MD.svg",
     "phoneLength": 8
@@ -2568,9 +2261,7 @@
       "alpha-3": "MNE",
       "numeric": "499"
     },
-    "phone": [
-      "+382"
-    ],
+    "phone": ["+382"],
     "emoji": "🇲🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ME.svg",
     "phoneLength": 8
@@ -2586,9 +2277,7 @@
       "alpha-3": "MAF",
       "numeric": "663"
     },
-    "phone": [
-      "+590"
-    ],
+    "phone": ["+590"],
     "emoji": "🇲🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MF.svg",
     "phoneLength": 6
@@ -2604,9 +2293,7 @@
       "alpha-3": "MDG",
       "numeric": "450"
     },
-    "phone": [
-      "+261"
-    ],
+    "phone": ["+261"],
     "emoji": "🇲🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MG.svg",
     "phoneLength": 7
@@ -2623,9 +2310,7 @@
       "alpha-3": "MHL",
       "numeric": "584"
     },
-    "phone": [
-      "+692"
-    ],
+    "phone": ["+692"],
     "emoji": "🇲🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MH.svg",
     "phoneLength": 7
@@ -2641,9 +2326,7 @@
       "alpha-3": "MKD",
       "numeric": "807"
     },
-    "phone": [
-      "+389"
-    ],
+    "phone": ["+389"],
     "emoji": "🇲🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MK.svg",
     "phoneLength": 8
@@ -2659,9 +2342,7 @@
       "alpha-3": "MLI",
       "numeric": "466"
     },
-    "phone": [
-      "+223"
-    ],
+    "phone": ["+223"],
     "emoji": "🇲🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ML.svg",
     "phoneLength": 8
@@ -2677,9 +2358,7 @@
       "alpha-3": "MMR",
       "numeric": "104"
     },
-    "phone": [
-      "+95"
-    ],
+    "phone": ["+95"],
     "emoji": "🇲🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MM.svg"
   },
@@ -2696,9 +2375,7 @@
       "alpha-3": "MNG",
       "numeric": "496"
     },
-    "phone": [
-      "+976"
-    ],
+    "phone": ["+976"],
     "emoji": "🇲🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MN.svg",
     "phoneLength": 8
@@ -2714,9 +2391,7 @@
       "alpha-3": "MAC",
       "numeric": "446"
     },
-    "phone": [
-      "+853"
-    ],
+    "phone": ["+853"],
     "emoji": "🇲🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MO.svg",
     "phoneLength": 8
@@ -2732,9 +2407,7 @@
       "alpha-3": "MNP",
       "numeric": "580"
     },
-    "phone": [
-      "+1-670"
-    ],
+    "phone": ["+1-670"],
     "emoji": "🇲🇵",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MP.svg",
     "phoneLength": 7
@@ -2750,9 +2423,7 @@
       "alpha-3": "MTQ",
       "numeric": "474"
     },
-    "phone": [
-      "+596"
-    ],
+    "phone": ["+596"],
     "emoji": "🇲🇶",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MQ.svg",
     "phoneLength": 9
@@ -2768,9 +2439,7 @@
       "alpha-3": "MRT",
       "numeric": "478"
     },
-    "phone": [
-      "+222"
-    ],
+    "phone": ["+222"],
     "emoji": "🇲🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MR.svg",
     "phoneLength": 8
@@ -2786,9 +2455,7 @@
       "alpha-3": "MSR",
       "numeric": "500"
     },
-    "phone": [
-      "+1-664"
-    ],
+    "phone": ["+1-664"],
     "emoji": "🇲🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MS.svg",
     "phoneLength": 10
@@ -2804,9 +2471,7 @@
       "alpha-3": "MLT",
       "numeric": "470"
     },
-    "phone": [
-      "+356"
-    ],
+    "phone": ["+356"],
     "emoji": "🇲🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MT.svg",
     "phoneLength": 8
@@ -2822,9 +2487,7 @@
       "alpha-3": "MUS",
       "numeric": "480"
     },
-    "phone": [
-      "+230"
-    ],
+    "phone": ["+230"],
     "emoji": "🇲🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MU.svg",
     "phoneLength": 8
@@ -2840,9 +2503,7 @@
       "alpha-3": "MDV",
       "numeric": "462"
     },
-    "phone": [
-      "+960"
-    ],
+    "phone": ["+960"],
     "emoji": "🇲🇻",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MV.svg",
     "phoneLength": 7
@@ -2858,16 +2519,10 @@
       "alpha-3": "MWI",
       "numeric": "454"
     },
-    "phone": [
-      "+265"
-    ],
+    "phone": ["+265"],
     "emoji": "🇲🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MW.svg",
-    "phoneLength": [
-      7,
-      8,
-      9
-    ]
+    "phoneLength": [7, 8, 9]
   },
   {
     "name": "Mexico",
@@ -2891,9 +2546,7 @@
       "alpha-3": "MEX",
       "numeric": "484"
     },
-    "phone": [
-      "+52"
-    ],
+    "phone": ["+52"],
     "emoji": "🇲🇽",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MX.svg",
     "phoneLength": 10
@@ -2910,9 +2563,7 @@
       "alpha-3": "MYS",
       "numeric": "458"
     },
-    "phone": [
-      "+60"
-    ],
+    "phone": ["+60"],
     "emoji": "🇲🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MY.svg",
     "phoneLength": 7
@@ -2928,9 +2579,7 @@
       "alpha-3": "MOZ",
       "numeric": "508"
     },
-    "phone": [
-      "+258"
-    ],
+    "phone": ["+258"],
     "emoji": "🇲🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MZ.svg",
     "phoneLength": 12
@@ -2946,9 +2595,7 @@
       "alpha-3": "NAM",
       "numeric": "516"
     },
-    "phone": [
-      "+264"
-    ],
+    "phone": ["+264"],
     "emoji": "🇳🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NA.svg",
     "phoneLength": 7
@@ -2964,9 +2611,7 @@
       "alpha-3": "NCL",
       "numeric": "540"
     },
-    "phone": [
-      "+687"
-    ],
+    "phone": ["+687"],
     "emoji": "🇳🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NC.svg",
     "phoneLength": 6
@@ -2982,9 +2627,7 @@
       "alpha-3": "NER",
       "numeric": "562"
     },
-    "phone": [
-      "+227"
-    ],
+    "phone": ["+227"],
     "emoji": "🇳🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NE.svg",
     "phoneLength": 8
@@ -3000,9 +2643,7 @@
       "alpha-3": "NFK",
       "numeric": "574"
     },
-    "phone": [
-      "+672"
-    ],
+    "phone": ["+672"],
     "emoji": "🇳🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NF.svg",
     "phoneLength": 6
@@ -3018,9 +2659,7 @@
       "alpha-3": "NGA",
       "numeric": "566"
     },
-    "phone": [
-      "+234"
-    ],
+    "phone": ["+234"],
     "emoji": "🇳🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NG.svg",
     "phoneLength": 8
@@ -3036,9 +2675,7 @@
       "alpha-3": "NIC",
       "numeric": "558"
     },
-    "phone": [
-      "+505"
-    ],
+    "phone": ["+505"],
     "emoji": "🇳🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NI.svg",
     "phoneLength": 8
@@ -3054,9 +2691,7 @@
       "alpha-3": "NLD",
       "numeric": "528"
     },
-    "phone": [
-      "+31"
-    ],
+    "phone": ["+31"],
     "emoji": "🇳🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NL.svg",
     "phoneLength": 9
@@ -3072,9 +2707,7 @@
       "alpha-3": "NOR",
       "numeric": "578"
     },
-    "phone": [
-      "+47"
-    ],
+    "phone": ["+47"],
     "emoji": "🇳🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NO.svg",
     "phoneLength": 8
@@ -3090,9 +2723,7 @@
       "alpha-3": "NPL",
       "numeric": "524"
     },
-    "phone": [
-      "+977"
-    ],
+    "phone": ["+977"],
     "emoji": "🇳🇵",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NP.svg",
     "phoneLength": 10
@@ -3108,9 +2739,7 @@
       "alpha-3": "NRU",
       "numeric": "520"
     },
-    "phone": [
-      "+674"
-    ],
+    "phone": ["+674"],
     "emoji": "🇳🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NR.svg",
     "phoneLength": 7
@@ -3126,9 +2755,7 @@
       "alpha-3": "NIU",
       "numeric": "570"
     },
-    "phone": [
-      "+683"
-    ],
+    "phone": ["+683"],
     "emoji": "🇳🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NU.svg",
     "phoneLength": 4
@@ -3145,15 +2772,10 @@
       "alpha-3": "NZL",
       "numeric": "554"
     },
-    "phone": [
-      "+64"
-    ],
+    "phone": ["+64"],
     "emoji": "🇳🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NZ.svg",
-    "phoneLength": [
-      8,
-      9
-    ]
+    "phoneLength": [8, 9]
   },
   {
     "name": "Oman",
@@ -3166,9 +2788,7 @@
       "alpha-3": "OMN",
       "numeric": "512"
     },
-    "phone": [
-      "+968"
-    ],
+    "phone": ["+968"],
     "emoji": "🇴🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/OM.svg",
     "phoneLength": 8
@@ -3184,9 +2804,7 @@
       "alpha-3": "PAN",
       "numeric": "591"
     },
-    "phone": [
-      "+507"
-    ],
+    "phone": ["+507"],
     "emoji": "🇵🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PA.svg",
     "phoneLength": 8
@@ -3202,9 +2820,7 @@
       "alpha-3": "PER",
       "numeric": "604"
     },
-    "phone": [
-      "+51"
-    ],
+    "phone": ["+51"],
     "emoji": "🇵🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PE.svg",
     "phoneLength": 9
@@ -3222,9 +2838,7 @@
       "alpha-3": "PYF",
       "numeric": "258"
     },
-    "phone": [
-      "+689"
-    ],
+    "phone": ["+689"],
     "emoji": "🇵🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PF.svg",
     "phoneLength": 8
@@ -3241,9 +2855,7 @@
       "alpha-3": "PNG",
       "numeric": "598"
     },
-    "phone": [
-      "+675"
-    ],
+    "phone": ["+675"],
     "emoji": "🇵🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PG.svg",
     "phoneLength": 8
@@ -3259,9 +2871,7 @@
       "alpha-3": "PHL",
       "numeric": "608"
     },
-    "phone": [
-      "+63"
-    ],
+    "phone": ["+63"],
     "emoji": "🇵🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PH.svg",
     "phoneLength": 10
@@ -3277,9 +2887,7 @@
       "alpha-3": "PAK",
       "numeric": "586"
     },
-    "phone": [
-      "+92"
-    ],
+    "phone": ["+92"],
     "emoji": "🇵🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PK.svg",
     "phoneLength": 10
@@ -3295,9 +2903,7 @@
       "alpha-3": "POL",
       "numeric": "616"
     },
-    "phone": [
-      "+48"
-    ],
+    "phone": ["+48"],
     "emoji": "🇵🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PL.svg",
     "phoneLength": 9
@@ -3313,9 +2919,7 @@
       "alpha-3": "SPM",
       "numeric": "666"
     },
-    "phone": [
-      "+508"
-    ],
+    "phone": ["+508"],
     "emoji": "🇵🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PM.svg",
     "phoneLength": 6
@@ -3331,9 +2935,7 @@
       "alpha-3": "PCN",
       "numeric": "612"
     },
-    "phone": [
-      "+870"
-    ],
+    "phone": ["+870"],
     "emoji": "🇵🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PN.svg",
     "phoneLength": 9
@@ -3349,10 +2951,7 @@
       "alpha-3": "PRI",
       "numeric": "630"
     },
-    "phone": [
-      "+1-787",
-      "+1-939"
-    ],
+    "phone": ["+1-787", "+1-939"],
     "emoji": "🇵🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PR.svg",
     "phoneLength": 10
@@ -3369,9 +2968,7 @@
       "alpha-3": "PSE",
       "numeric": "275"
     },
-    "phone": [
-      "+970"
-    ],
+    "phone": ["+970"],
     "emoji": "🇵🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PS.svg",
     "phoneLength": 9
@@ -3389,9 +2986,7 @@
       "alpha-3": "PRT",
       "numeric": "620"
     },
-    "phone": [
-      "+351"
-    ],
+    "phone": ["+351"],
     "emoji": "🇵🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PT.svg",
     "phoneLength": 9
@@ -3407,9 +3002,7 @@
       "alpha-3": "PLW",
       "numeric": "585"
     },
-    "phone": [
-      "+680"
-    ],
+    "phone": ["+680"],
     "emoji": "🇵🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PW.svg",
     "phoneLength": 7
@@ -3425,9 +3018,7 @@
       "alpha-3": "PRY",
       "numeric": "600"
     },
-    "phone": [
-      "+595"
-    ],
+    "phone": ["+595"],
     "emoji": "🇵🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PY.svg",
     "phoneLength": 9
@@ -3443,9 +3034,7 @@
       "alpha-3": "QAT",
       "numeric": "634"
     },
-    "phone": [
-      "+974"
-    ],
+    "phone": ["+974"],
     "emoji": "🇶🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/QA.svg",
     "phoneLength": 8
@@ -3461,9 +3050,7 @@
       "alpha-3": "REU",
       "numeric": "638"
     },
-    "phone": [
-      "+262"
-    ],
+    "phone": ["+262"],
     "emoji": "🇷🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RE.svg",
     "phoneLength": 10
@@ -3479,9 +3066,7 @@
       "alpha-3": "ROU",
       "numeric": "642"
     },
-    "phone": [
-      "+40"
-    ],
+    "phone": ["+40"],
     "emoji": "🇷🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RO.svg",
     "phoneLength": 10
@@ -3497,9 +3082,7 @@
       "alpha-3": "SRB",
       "numeric": "688"
     },
-    "phone": [
-      "+381"
-    ],
+    "phone": ["+381"],
     "emoji": "🇷🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RS.svg",
     "phoneLength": 9
@@ -3540,9 +3123,7 @@
       "alpha-3": "RUS",
       "numeric": "643"
     },
-    "phone": [
-      "+7"
-    ],
+    "phone": ["+7"],
     "emoji": "🇷🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RU.svg",
     "phoneLength": 10
@@ -3558,9 +3139,7 @@
       "alpha-3": "RWA",
       "numeric": "646"
     },
-    "phone": [
-      "+250"
-    ],
+    "phone": ["+250"],
     "emoji": "🇷🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RW.svg",
     "phoneLength": 9
@@ -3576,9 +3155,7 @@
       "alpha-3": "SAU",
       "numeric": "682"
     },
-    "phone": [
-      "+966"
-    ],
+    "phone": ["+966"],
     "emoji": "🇸🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SA.svg",
     "phoneLength": 9
@@ -3594,9 +3171,7 @@
       "alpha-3": "SLB",
       "numeric": "090"
     },
-    "phone": [
-      "+677"
-    ],
+    "phone": ["+677"],
     "emoji": "🇸🇧",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SB.svg",
     "phoneLength": 7
@@ -3612,9 +3187,7 @@
       "alpha-3": "SYC",
       "numeric": "690"
     },
-    "phone": [
-      "+248"
-    ],
+    "phone": ["+248"],
     "emoji": "🇸🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SC.svg",
     "phoneLength": 7
@@ -3630,9 +3203,7 @@
       "alpha-3": "SDN",
       "numeric": "729"
     },
-    "phone": [
-      "+249"
-    ],
+    "phone": ["+249"],
     "emoji": "🇸🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SD.svg",
     "phoneLength": 7
@@ -3648,9 +3219,7 @@
       "alpha-3": "SWE",
       "numeric": "752"
     },
-    "phone": [
-      "+46"
-    ],
+    "phone": ["+46"],
     "emoji": "🇸🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SE.svg",
     "phoneLength": 7
@@ -3666,9 +3235,7 @@
       "alpha-3": "SGP",
       "numeric": "702"
     },
-    "phone": [
-      "+65"
-    ],
+    "phone": ["+65"],
     "emoji": "🇸🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SG.svg",
     "phoneLength": 8
@@ -3684,9 +3251,7 @@
       "alpha-3": "SHN",
       "numeric": "654"
     },
-    "phone": [
-      "+290"
-    ],
+    "phone": ["+290"],
     "emoji": "🇸🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SH.svg",
     "phoneLength": 4
@@ -3702,9 +3267,7 @@
       "alpha-3": "SVN",
       "numeric": "705"
     },
-    "phone": [
-      "+386"
-    ],
+    "phone": ["+386"],
     "emoji": "🇸🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SI.svg",
     "phoneLength": 9
@@ -3720,9 +3283,7 @@
       "alpha-3": "SJM",
       "numeric": "744"
     },
-    "phone": [
-      "+47"
-    ],
+    "phone": ["+47"],
     "emoji": "🇸🇯",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SJ.svg",
     "phoneLength": 8
@@ -3738,9 +3299,7 @@
       "alpha-3": "SVK",
       "numeric": "703"
     },
-    "phone": [
-      "+421"
-    ],
+    "phone": ["+421"],
     "emoji": "🇸🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SK.svg",
     "phoneLength": 9
@@ -3756,9 +3315,7 @@
       "alpha-3": "SLE",
       "numeric": "694"
     },
-    "phone": [
-      "+232"
-    ],
+    "phone": ["+232"],
     "emoji": "🇸🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SL.svg",
     "phoneLength": 8
@@ -3774,9 +3331,7 @@
       "alpha-3": "SMR",
       "numeric": "674"
     },
-    "phone": [
-      "+378"
-    ],
+    "phone": ["+378"],
     "emoji": "🇸🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SM.svg",
     "phoneLength": 10
@@ -3792,9 +3347,7 @@
       "alpha-3": "SEN",
       "numeric": "686"
     },
-    "phone": [
-      "+221"
-    ],
+    "phone": ["+221"],
     "emoji": "🇸🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SN.svg",
     "phoneLength": 9
@@ -3810,15 +3363,10 @@
       "alpha-3": "SOM",
       "numeric": "706"
     },
-    "phone": [
-      "+252"
-    ],
+    "phone": ["+252"],
     "emoji": "🇸🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SO.svg",
-    "phoneLength": [
-      8,
-      9
-    ]
+    "phoneLength": [8, 9]
   },
   {
     "name": "Suriname",
@@ -3831,15 +3379,10 @@
       "alpha-3": "SUR",
       "numeric": "740"
     },
-    "phone": [
-      "+597"
-    ],
+    "phone": ["+597"],
     "emoji": "🇸🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SR.svg",
-    "phoneLength": [
-      6,
-      7
-    ]
+    "phoneLength": [6, 7]
   },
   {
     "name": "South Sudan",
@@ -3852,9 +3395,7 @@
       "alpha-3": "SSD",
       "numeric": "728"
     },
-    "phone": [
-      "+211"
-    ],
+    "phone": ["+211"],
     "emoji": "🇸🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SS.svg",
     "phoneLength": 7
@@ -3870,9 +3411,7 @@
       "alpha-3": "STP",
       "numeric": "678"
     },
-    "phone": [
-      "+239"
-    ],
+    "phone": ["+239"],
     "emoji": "🇸🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ST.svg",
     "phoneLength": 7
@@ -3888,9 +3427,7 @@
       "alpha-3": "SLV",
       "numeric": "222"
     },
-    "phone": [
-      "+503"
-    ],
+    "phone": ["+503"],
     "emoji": "🇸🇻",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SV.svg",
     "phoneLength": 8
@@ -3906,9 +3443,7 @@
       "alpha-3": "SXM",
       "numeric": "534"
     },
-    "phone": [
-      "+599"
-    ],
+    "phone": ["+599"],
     "emoji": "🇸🇽",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SX.svg",
     "phoneLength": 10
@@ -3924,9 +3459,7 @@
       "alpha-3": "SYR",
       "numeric": "760"
     },
-    "phone": [
-      "+963"
-    ],
+    "phone": ["+963"],
     "emoji": "🇸🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SY.svg",
     "phoneLength": 7
@@ -3942,9 +3475,7 @@
       "alpha-3": "SWZ",
       "numeric": "748"
     },
-    "phone": [
-      "+268"
-    ],
+    "phone": ["+268"],
     "emoji": "🇸🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SZ.svg",
     "phoneLength": 8
@@ -3960,9 +3491,7 @@
       "alpha-3": "TCA",
       "numeric": "796"
     },
-    "phone": [
-      "+1-649"
-    ],
+    "phone": ["+1-649"],
     "emoji": "🇹🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TC.svg",
     "phoneLength": 10
@@ -3978,9 +3507,7 @@
       "alpha-3": "TCD",
       "numeric": "148"
     },
-    "phone": [
-      "+235"
-    ],
+    "phone": ["+235"],
     "emoji": "🇹🇩",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TD.svg",
     "phoneLength": 6
@@ -3996,9 +3523,7 @@
       "alpha-3": "ATF",
       "numeric": "260"
     },
-    "phone": [
-      "+"
-    ],
+    "phone": ["+"],
     "emoji": "🇹🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TF.svg",
     "phoneLength": 10
@@ -4014,9 +3539,7 @@
       "alpha-3": "TGO",
       "numeric": "768"
     },
-    "phone": [
-      "+228"
-    ],
+    "phone": ["+228"],
     "emoji": "🇹🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TG.svg",
     "phoneLength": 8
@@ -4032,9 +3555,7 @@
       "alpha-3": "THA",
       "numeric": "764"
     },
-    "phone": [
-      "+66"
-    ],
+    "phone": ["+66"],
     "emoji": "🇹🇭",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TH.svg",
     "phoneLength": 9
@@ -4050,9 +3571,7 @@
       "alpha-3": "TJK",
       "numeric": "762"
     },
-    "phone": [
-      "+992"
-    ],
+    "phone": ["+992"],
     "emoji": "🇹🇯",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TJ.svg",
     "phoneLength": 9
@@ -4068,9 +3587,7 @@
       "alpha-3": "TKL",
       "numeric": "772"
     },
-    "phone": [
-      "+690"
-    ],
+    "phone": ["+690"],
     "emoji": "🇹🇰",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TK.svg",
     "phoneLength": 5
@@ -4086,9 +3603,7 @@
       "alpha-3": "TLS",
       "numeric": "626"
     },
-    "phone": [
-      "+670"
-    ],
+    "phone": ["+670"],
     "emoji": "🇹🇱",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TL.svg",
     "phoneLength": 7
@@ -4104,9 +3619,7 @@
       "alpha-3": "TKM",
       "numeric": "795"
     },
-    "phone": [
-      "+993"
-    ],
+    "phone": ["+993"],
     "emoji": "🇹🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TM.svg",
     "phoneLength": 8
@@ -4122,9 +3635,7 @@
       "alpha-3": "TUN",
       "numeric": "788"
     },
-    "phone": [
-      "+216"
-    ],
+    "phone": ["+216"],
     "emoji": "🇹🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TN.svg",
     "phoneLength": 8
@@ -4140,9 +3651,7 @@
       "alpha-3": "TON",
       "numeric": "776"
     },
-    "phone": [
-      "+676"
-    ],
+    "phone": ["+676"],
     "emoji": "🇹🇴",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TO.svg",
     "phoneLength": 5
@@ -4158,9 +3667,7 @@
       "alpha-3": "TUR",
       "numeric": "792"
     },
-    "phone": [
-      "+90"
-    ],
+    "phone": ["+90"],
     "emoji": "🇹🇷",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TR.svg",
     "phoneLength": 11
@@ -4176,9 +3683,7 @@
       "alpha-3": "TTO",
       "numeric": "780"
     },
-    "phone": [
-      "+1-868"
-    ],
+    "phone": ["+1-868"],
     "emoji": "🇹🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TT.svg",
     "phoneLength": 7
@@ -4194,9 +3699,7 @@
       "alpha-3": "TUV",
       "numeric": "798"
     },
-    "phone": [
-      "+688"
-    ],
+    "phone": ["+688"],
     "emoji": "🇹🇻",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TV.svg",
     "phoneLength": 5
@@ -4212,9 +3715,7 @@
       "alpha-3": "TWN",
       "numeric": "158"
     },
-    "phone": [
-      "+886"
-    ],
+    "phone": ["+886"],
     "emoji": "🇹🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TW.svg",
     "phoneLength": 9
@@ -4230,9 +3731,7 @@
       "alpha-3": "TZA",
       "numeric": "834"
     },
-    "phone": [
-      "+255"
-    ],
+    "phone": ["+255"],
     "emoji": "🇹🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TZ.svg",
     "phoneLength": 7
@@ -4249,9 +3748,7 @@
       "alpha-3": "UKR",
       "numeric": "804"
     },
-    "phone": [
-      "+380"
-    ],
+    "phone": ["+380"],
     "emoji": "🇺🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UA.svg",
     "phoneLength": 9
@@ -4267,9 +3764,7 @@
       "alpha-3": "UGA",
       "numeric": "800"
     },
-    "phone": [
-      "+256"
-    ],
+    "phone": ["+256"],
     "emoji": "🇺🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UG.svg",
     "phoneLength": 7
@@ -4313,9 +3808,7 @@
       "alpha-3": "USA",
       "numeric": "840"
     },
-    "phone": [
-      "+1"
-    ],
+    "phone": ["+1"],
     "emoji": "🇺🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/US.svg",
     "phoneLength": 10
@@ -4331,9 +3824,7 @@
       "alpha-3": "URY",
       "numeric": "858"
     },
-    "phone": [
-      "+598"
-    ],
+    "phone": ["+598"],
     "emoji": "🇺🇾",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UY.svg",
     "phoneLength": 8
@@ -4350,9 +3841,7 @@
       "alpha-3": "UZB",
       "numeric": "860"
     },
-    "phone": [
-      "+998"
-    ],
+    "phone": ["+998"],
     "emoji": "🇺🇿",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UZ.svg",
     "phoneLength": 9
@@ -4368,9 +3857,7 @@
       "alpha-3": "VAT",
       "numeric": "336"
     },
-    "phone": [
-      "+379"
-    ],
+    "phone": ["+379"],
     "emoji": "🇻🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VA.svg",
     "phoneLength": 10
@@ -4386,9 +3873,7 @@
       "alpha-3": "VCT",
       "numeric": "670"
     },
-    "phone": [
-      "+1-784"
-    ],
+    "phone": ["+1-784"],
     "emoji": "🇻🇨",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VC.svg",
     "phoneLength": 7
@@ -4404,9 +3889,7 @@
       "alpha-3": "VEN",
       "numeric": "862"
     },
-    "phone": [
-      "+58"
-    ],
+    "phone": ["+58"],
     "emoji": "🇻🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VE.svg",
     "phoneLength": 7
@@ -4422,9 +3905,7 @@
       "alpha-3": "VGB",
       "numeric": "092"
     },
-    "phone": [
-      "+1-284"
-    ],
+    "phone": ["+1-284"],
     "emoji": "🇻🇬",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VG.svg",
     "phoneLength": 7
@@ -4440,9 +3921,7 @@
       "alpha-3": "VIR",
       "numeric": "850"
     },
-    "phone": [
-      "+1-340"
-    ],
+    "phone": ["+1-340"],
     "emoji": "🇻🇮",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VI.svg",
     "phoneLength": 10
@@ -4458,9 +3937,7 @@
       "alpha-3": "VNM",
       "numeric": "704"
     },
-    "phone": [
-      "+84"
-    ],
+    "phone": ["+84"],
     "emoji": "🇻🇳",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VN.svg",
     "phoneLength": 9
@@ -4476,9 +3953,7 @@
       "alpha-3": "VUT",
       "numeric": "548"
     },
-    "phone": [
-      "+678"
-    ],
+    "phone": ["+678"],
     "emoji": "🇻🇺",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VU.svg",
     "phoneLength": 5
@@ -4494,9 +3969,7 @@
       "alpha-3": "WLF",
       "numeric": "876"
     },
-    "phone": [
-      "+681"
-    ],
+    "phone": ["+681"],
     "emoji": "🇼🇫",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/WF.svg",
     "phoneLength": 6
@@ -4512,19 +3985,10 @@
       "alpha-3": "WSM",
       "numeric": "882"
     },
-    "phone": [
-      "+685"
-    ],
+    "phone": ["+685"],
     "emoji": "🇼🇸",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/WS.svg",
-    "phoneLength": [
-      5,
-      6,
-      7
-    ]
-  },
-  {
-    "phoneLength": 8
+    "phoneLength": [5, 6, 7]
   },
   {
     "name": "Yemen",
@@ -4537,9 +4001,7 @@
       "alpha-3": "YEM",
       "numeric": "887"
     },
-    "phone": [
-      "+967"
-    ],
+    "phone": ["+967"],
     "emoji": "🇾🇪",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/YE.svg",
     "phoneLength": 9
@@ -4555,9 +4017,7 @@
       "alpha-3": "MYT",
       "numeric": "175"
     },
-    "phone": [
-      "+262"
-    ],
+    "phone": ["+262"],
     "emoji": "🇾🇹",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/YT.svg",
     "phoneLength": 9
@@ -4573,9 +4033,7 @@
       "alpha-3": "ZAF",
       "numeric": "710"
     },
-    "phone": [
-      "+27"
-    ],
+    "phone": ["+27"],
     "emoji": "🇿🇦",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ZA.svg",
     "phoneLength": 9
@@ -4591,9 +4049,7 @@
       "alpha-3": "ZMB",
       "numeric": "894"
     },
-    "phone": [
-      "+260"
-    ],
+    "phone": ["+260"],
     "emoji": "🇿🇲",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ZM.svg",
     "phoneLength": 9
@@ -4609,9 +4065,7 @@
       "alpha-3": "ZWE",
       "numeric": "716"
     },
-    "phone": [
-      "+263"
-    ],
+    "phone": ["+263"],
     "emoji": "🇿🇼",
     "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ZW.svg",
     "phoneLength": 9
