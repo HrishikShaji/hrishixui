@@ -28,21 +28,22 @@ export const InputPhone = () => {
     <div className="flex relative flex-col gap-2">
       <input onClick={() => setIsOpen(!isOpen)} />
       {isOpen ? (
-        <div className="absolute top-10">
+        <div className="absolute top-10 rounded-md w-[300px] bg-white overflow-hidden">
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search..."
+            className="w-full focus:outline-none p-1"
           />
           <div
             ref={containerRef}
-            className="h-[500px] w-[300px]  flex flex-col overflow-y-scroll"
+            className="h-[500px] w-full  flex flex-col overflow-y-scroll"
           >
             {countryCodes.map((item) => (
               <div
                 key={item.name}
-                className="country-item flex items-center gap-2 text-sm bg-white p-1 rounded-md"
+                className="country-item flex hover:bg-gray-300 cursor-pointer items-center gap-2 text-sm p-1"
                 data-name={item.name}
               >
                 <Image
