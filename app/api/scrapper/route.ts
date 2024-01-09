@@ -15,7 +15,9 @@ export async function GET(request: Request) {
 		const dom = new JSDOM(html);
 		const document = dom.window.document;
 		const title = document.querySelector("title");
-		console.log(title?.textContent);
+		const links = document.querySelectorAll("link");
+		const link = Array.from(links).filter((link) => link.rel === "icon");
+		console.log(link[0].href);
 		return new Response(JSON.stringify(html), { status: 200 });
 	} catch (error: any) {
 		return new Response(JSON.stringify(error.message), { status: 500 });
