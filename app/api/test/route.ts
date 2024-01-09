@@ -1,33 +1,33 @@
 export async function GET(request: Request) {
-  try {
-    return new Response(JSON.stringify("succes"), { status: 200 });
-  } catch (error: any) {
-    return new Response(JSON.stringify(error.message), { status: 500 });
-  }
+	try {
+		return new Response(JSON.stringify("succes"), { status: 200 });
+	} catch (error: any) {
+		return new Response(JSON.stringify(error.message), { status: 500 });
+	}
 }
 
 export async function POST(request: Request) {
-  try {
-    const body = await request.json();
-    console.log("in the backend", body);
-    return new Response(JSON.stringify("succes"), { status: 200 });
-  } catch (error: any) {
-    return new Response(JSON.stringify(error.message), { status: 500 });
-  }
+	try {
+		const body = await request.json();
+		console.log("in the backend", body);
+		return new Response(JSON.stringify("succes"), { status: 200 });
+	} catch (error: any) {
+		return new Response(JSON.stringify(error.message), { status: 500 });
+	}
 }
 
 export async function PATCH(request: Request) {
-  try {
-    return new Response(JSON.stringify("succes"), { status: 200 });
-  } catch (error: any) {
-    return new Response(JSON.stringify(error.message), { status: 500 });
-  }
+	try {
+		return new Response(JSON.stringify("succes"), { status: 200 });
+	} catch (error: any) {
+		return new Response(JSON.stringify(error.message), { status: 500 });
+	}
 }
 
 export async function DELETE(request: Request) {
-  try {
-    return new Response(JSON.stringify("succes"), { status: 200 });
-  } catch (error: any) {
-    return new Response(JSON.stringify(error.message), { status: 500 });
-  }
+	try {
+		return new Response(JSON.stringify("succes"), { status: 200 });
+	} catch (error: any) {
+		return new Response(JSON.stringify(error.message), { status: 500 });
+	}
 }
